@@ -1,0 +1,15 @@
+module cruise_speed
+{
+	struct Msg
+	{
+		long id;
+		double curr_speed;
+
+	};
+	#pragma keylist Msg id
+
+
+};
+
+
+

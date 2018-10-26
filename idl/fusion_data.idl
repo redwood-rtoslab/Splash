@@ -1,0 +1,27 @@
+module fusion_data
+{
+
+	typedef string QQ[10]; 
+
+	struct Msg
+	{
+		long fusion_data_id;
+
+		long received_port[9];		
+
+		long data_id[9];
+
+		string message[9];
+	
+		long long constraint_deadline_duetime;
+        long long constraint_freshness_gentime;
+
+		QQ test;
+	};
+	#pragma keylist Msg fusion_data_id
+
+
+};
+
+
+

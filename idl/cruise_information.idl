@@ -1,0 +1,16 @@
+module cruise_information
+{
+	struct Msg
+	{
+		long id;
+		double throttle;
+		double brake;
+
+	};
+	#pragma keylist Msg id
+
+
+};
+
+
+

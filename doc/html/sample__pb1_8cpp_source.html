@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>RTOS Splash: src/sample_pb1.cpp 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RTOS Splash
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('sample__pb1_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">sample_pb1.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sample__pb1_8cpp.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sample__main__header_8h.html">sample_main_header.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="sample__pb1_8cpp.html#a4a2016e07db75d53a9bd55f0c7026b40">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sample__pb1_8cpp.html#a4a2016e07db75d53a9bd55f0c7026b40">pb_1_input_rate_handler</a>()</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    printf(<span class="stringliteral">&quot;[%ld] pb_1_input_rate_handler()\n&quot;</span>, <a class="code" href="classSystemClock.html#ac51adb5878772576050a1c70b8994244">SystemClock::getCurrentTime</a>());</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="sample__pb1_8cpp.html#a5baeec3c3a02afb0583aba9acb57b3a2">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sample__pb1_8cpp.html#a5baeec3c3a02afb0583aba9acb57b3a2">pb_1_output_rate_handler</a>()</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    printf(<span class="stringliteral">&quot;[%ld] pb_1_output_rate_handler()\n&quot;</span>, <a class="code" href="classSystemClock.html#ac51adb5878772576050a1c70b8994244">SystemClock::getCurrentTime</a>());</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="sample__pb1_8cpp.html#ae2f276c487f9e911c3b7f6037305b914">   19</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sample__pb1_8cpp.html#ae2f276c487f9e911c3b7f6037305b914">pb_1_deadline_handler</a>()</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    printf(<span class="stringliteral">&quot;[%ld] pb_1_deadline_handler()\n&quot;</span>, <a class="code" href="classSystemClock.html#ac51adb5878772576050a1c70b8994244">SystemClock::getCurrentTime</a>());</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="sample__pb1_8cpp.html#a005ecd9115d1446bdefa1a6a0655465e">   24</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sample__pb1_8cpp.html#a005ecd9115d1446bdefa1a6a0655465e">pb_1_freshness_handler</a>()</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    printf(<span class="stringliteral">&quot;[%ld] pb_1_freshness_handler()\n&quot;</span>, <a class="code" href="classSystemClock.html#ac51adb5878772576050a1c70b8994244">SystemClock::getCurrentTime</a>());</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;&lt;<span class="keyword">typename</span> Data_0, <span class="keyword">typename</span> Data_1, </div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">typename</span> Data_2, <span class="keyword">typename</span> Data_3, </div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">typename</span> Data_4, <span class="keyword">typename</span> Data_5,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">typename</span> Data_6, <span class="keyword">typename</span> Data_7,</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">typename</span> Data_8, <span class="keyword">typename</span> Data_9&gt;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="classProcessingBlock.html#a36e353e417f3fe482492f6166c504a71">ProcessingBlock&lt;Data_0,Data_1,Data_2,Data_3,Data_4,Data_5,Data_6,Data_7,Data_8,Data_9&gt;::spin</a>()</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;[PB_1 START]\n&quot;</span>&lt;&lt;std::endl;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    dds::sub::Sample&lt;default_data::Msg&gt; input_1;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    default_data::Msg input_msg;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    default_data::Msg output_msg;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    this-&gt;passProcessingDeadline(0, 0);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    this-&gt;passFactoryDeadline(0, 0);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    this-&gt;passFreshness(0, 0);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">while</span>(<span class="keyword">true</span>) </div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {       </div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        this-&gt;read(&amp;input_1);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        input_msg = input_1.data();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//std::this_thread::sleep_for(std::chrono::milliseconds(200));</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        output_msg.id(1001);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span>(input_msg.sensor_data() &gt; 200) {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            printf(<span class="stringliteral">&quot;[msg id]%d\t\t[range]%ld\t\t[state]SAFE\n&quot;</span>, input_msg.id(), input_msg.sensor_data());</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            output_msg.message(<span class="stringliteral">&quot;SAFE&quot;</span>);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            output_msg.sensor_data(input_msg.sensor_data());</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">else</span> {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            printf(<span class="stringliteral">&quot;[msg id]%d\t\t[range]%ld\t\t[state]WARNING\n&quot;</span>, input_msg.id(), input_msg.sensor_data());</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            output_msg.message(<span class="stringliteral">&quot;WARNING&quot;</span>);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            output_msg.sensor_data(input_msg.sensor_data());</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }       </div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        this-&gt;write(output_msg);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        std::this_thread::sleep_for(std::chrono::milliseconds(200));</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }   </div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="sample__pb1_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   78</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="sample__pb1_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">/* PB_0 configuation */</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classProcessingBlock.html">ProcessingBlock &lt;default_data::Msg,junk_1::Msg,junk_2::Msg,junk_3::Msg,junk_4::Msg,default_data::Msg,junk_6::Msg,junk_7::Msg,junk_8::Msg,junk_9::Msg&gt;</a> </div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        PB_1;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classInputDataPort__PB.html">InputDataPort_PB &lt;default_data::Msg,junk_1::Msg,junk_2::Msg,junk_3::Msg,junk_4::Msg,default_data::Msg,junk_6::Msg,junk_7::Msg,junk_8::Msg,junk_9::Msg&gt;</a> </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        PIDP_10;    </div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classOutputDataPort__PB.html">OutputDataPort_PB &lt;default_data::Msg,junk_1::Msg,junk_2::Msg,junk_3::Msg,junk_4::Msg,default_data::Msg,junk_6::Msg,junk_7::Msg,junk_8::Msg,junk_9::Msg&gt;</a> </div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        PODP_10;    </div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    PIDP_10.<a class="code" href="classInputDataPort__PB.html#a1e2a0dd2fc47211496927695a511e1a5">attach</a>(&amp;PB_1, <span class="stringliteral">&quot;TOPIC_C&quot;</span>, 0);    </div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    PODP_10.<a class="code" href="classOutputDataPort__PB.html#ac1c7e483c5d8d5c6b9891463b81e41a4">attach</a>(&amp;PB_1, <span class="stringliteral">&quot;TOPIC_D&quot;</span>, 5);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    PIDP_10.<a class="code" href="classInputDataPort__PB.html#a86f4f5662cd09fab17a1027815a2aaa3">initialize</a>(3,<a class="code" href="sample__pb1_8cpp.html#a4a2016e07db75d53a9bd55f0c7026b40">pb_1_input_rate_handler</a>,2,<a class="code" href="sample__pb1_8cpp.html#a005ecd9115d1446bdefa1a6a0655465e">pb_1_freshness_handler</a>,1,1);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    PODP_10.<a class="code" href="classOutputDataPort__PB.html#a7b98a0affb81a4c74a8dfc70eac515ba">initialize</a>(3,<a class="code" href="sample__pb1_8cpp.html#a5baeec3c3a02afb0583aba9acb57b3a2">pb_1_output_rate_handler</a>);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    PB_1.<a class="code" href="classProcessingBlock.html#a799c5c29e6f0c49e1328d9781a72eb6c">initialize</a>(<a class="code" href="classProcessingBlock.html">ProcessingBlock &lt;default_data::Msg,junk_1::Msg,junk_2::Msg,junk_3::Msg,junk_4::Msg,default_data::Msg,junk_6::Msg,junk_7::Msg,junk_8::Msg,junk_9::Msg&gt;::NORMAL</a>,</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                    <span class="stringliteral">&quot;PB_1&quot;</span>,300,<a class="code" href="sample__pb1_8cpp.html#ae2f276c487f9e911c3b7f6037305b914">pb_1_deadline_handler</a>,10,0,0);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    PB_1.<a class="code" href="classProcessingBlock.html#a36e353e417f3fe482492f6166c504a71">spin</a>();</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div><div class="ttc" id="sample__pb1_8cpp_html_ae2f276c487f9e911c3b7f6037305b914"><div class="ttname"><a href="sample__pb1_8cpp.html#ae2f276c487f9e911c3b7f6037305b914">pb_1_deadline_handler</a></div><div class="ttdeci">void pb_1_deadline_handler()</div><div class="ttdef"><b>Definition:</b> <a href="sample__pb1_8cpp_source.html#l00019">sample_pb1.cpp:19</a></div></div>
+<div class="ttc" id="classProcessingBlock_html_a799c5c29e6f0c49e1328d9781a72eb6c"><div class="ttname"><a href="classProcessingBlock.html#a799c5c29e6f0c49e1328d9781a72eb6c">ProcessingBlock::initialize</a></div><div class="ttdeci">void initialize(ProcessingBlock::PB_TYPE type, std::string name, int64_t deadline, void(*deadline_handler)(), int period, bool time_trigger, int core_id)</div><div class="ttdef"><b>Definition:</b> <a href="Processing__block_8cpp_source.html#l01467">Processing_block.cpp:1467</a></div></div>
+<div class="ttc" id="classOutputDataPort__PB_html_a7b98a0affb81a4c74a8dfc70eac515ba"><div class="ttname"><a href="classOutputDataPort__PB.html#a7b98a0affb81a4c74a8dfc70eac515ba">OutputDataPort_PB::initialize</a></div><div class="ttdeci">void initialize(int rate, void(*rate_handler)())</div><div class="ttdef"><b>Definition:</b> <a href="Processing__block_8cpp_source.html#l01078">Processing_block.cpp:1078</a></div></div>
+<div class="ttc" id="classProcessingBlock_html_a36e353e417f3fe482492f6166c504a71"><div class="ttname"><a href="classProcessingBlock.html#a36e353e417f3fe482492f6166c504a71">ProcessingBlock::spin</a></div><div class="ttdeci">void spin()</div><div class="ttdef"><b>Definition:</b> <a href="Cruise__control_8cpp_source.html#l00009">Cruise_control.cpp:9</a></div></div>
+<div class="ttc" id="sample__pb1_8cpp_html_a4a2016e07db75d53a9bd55f0c7026b40"><div class="ttname"><a href="sample__pb1_8cpp.html#a4a2016e07db75d53a9bd55f0c7026b40">pb_1_input_rate_handler</a></div><div class="ttdeci">void pb_1_input_rate_handler()</div><div class="ttdef"><b>Definition:</b> <a href="sample__pb1_8cpp_source.html#l00008">sample_pb1.cpp:8</a></div></div>
+<div class="ttc" id="sample__pb1_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="sample__pb1_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="sample__pb1_8cpp_source.html#l00078">sample_pb1.cpp:78</a></div></div>
+<div class="ttc" id="classProcessingBlock_html"><div class="ttname"><a href="classProcessingBlock.html">ProcessingBlock</a></div><div class="ttdoc">Splash LanguageConstructs &gt; ComponentType &gt; AtomicComponentType &gt; ProcessingBlockType. </div><div class="ttdef"><b>Definition:</b> <a href="address__test_8cpp_source.html#l00014">address_test.cpp:14</a></div></div>
+<div class="ttc" id="classInputDataPort__PB_html_a1e2a0dd2fc47211496927695a511e1a5"><div class="ttname"><a href="classInputDataPort__PB.html#a1e2a0dd2fc47211496927695a511e1a5">InputDataPort_PB::attach</a></div><div class="ttdeci">int attach(ProcessingBlock&lt; Data_0, Data_1, Data_2, Data_3, Data_4, Data_5, Data_6, Data_7, Data_8, Data_9 &gt; *, std::string, int)</div><div class="ttdef"><b>Definition:</b> <a href="Base__cell_8cpp_source.html#l00205">Base_cell.cpp:205</a></div></div>
+<div class="ttc" id="classOutputDataPort__PB_html"><div class="ttname"><a href="classOutputDataPort__PB.html">OutputDataPort_PB</a></div><div class="ttdoc">Splash lLnguageConstructs &gt; PortPrototype &gt; ReceiveInterface &gt; OutputStreamPort. </div><div class="ttdef"><b>Definition:</b> <a href="Base__cell_8cpp_source.html#l00022">Base_cell.cpp:22</a></div></div>
+<div class="ttc" id="classSystemClock_html_ac51adb5878772576050a1c70b8994244"><div class="ttname"><a href="classSystemClock.html#ac51adb5878772576050a1c70b8994244">SystemClock::getCurrentTime</a></div><div class="ttdeci">static int64_t getCurrentTime()</div><div class="ttdef"><b>Definition:</b> <a href="Processing__block_8cpp_source.html#l00065">Processing_block.cpp:65</a></div></div>
+<div class="ttc" id="sample__pb1_8cpp_html_a5baeec3c3a02afb0583aba9acb57b3a2"><div class="ttname"><a href="sample__pb1_8cpp.html#a5baeec3c3a02afb0583aba9acb57b3a2">pb_1_output_rate_handler</a></div><div class="ttdeci">void pb_1_output_rate_handler()</div><div class="ttdef"><b>Definition:</b> <a href="sample__pb1_8cpp_source.html#l00014">sample_pb1.cpp:14</a></div></div>
+<div class="ttc" id="sample__main__header_8h_html"><div class="ttname"><a href="sample__main__header_8h.html">sample_main_header.h</a></div></div>
+<div class="ttc" id="classInputDataPort__PB_html_a86f4f5662cd09fab17a1027815a2aaa3"><div class="ttname"><a href="classInputDataPort__PB.html#a86f4f5662cd09fab17a1027815a2aaa3">InputDataPort_PB::initialize</a></div><div class="ttdeci">void initialize(int rate, void(*rate_handler)(), int freshness, void(*freshness_handler)(), bool queueing, int queue_size)</div><div class="ttdef"><b>Definition:</b> <a href="Processing__block_8cpp_source.html#l00801">Processing_block.cpp:801</a></div></div>
+<div class="ttc" id="sample__pb1_8cpp_html_a005ecd9115d1446bdefa1a6a0655465e"><div class="ttname"><a href="sample__pb1_8cpp.html#a005ecd9115d1446bdefa1a6a0655465e">pb_1_freshness_handler</a></div><div class="ttdeci">void pb_1_freshness_handler()</div><div class="ttdef"><b>Definition:</b> <a href="sample__pb1_8cpp_source.html#l00024">sample_pb1.cpp:24</a></div></div>
+<div class="ttc" id="classOutputDataPort__PB_html_ac1c7e483c5d8d5c6b9891463b81e41a4"><div class="ttname"><a href="classOutputDataPort__PB.html#ac1c7e483c5d8d5c6b9891463b81e41a4">OutputDataPort_PB::attach</a></div><div class="ttdeci">int attach(ProcessingBlock&lt; Data_0, Data_1, Data_2, Data_3, Data_4, Data_5, Data_6, Data_7, Data_8, Data_9 &gt; *, std::string, int)</div><div class="ttdef"><b>Definition:</b> <a href="Base__cell_8cpp_source.html#l00327">Base_cell.cpp:327</a></div></div>
+<div class="ttc" id="classInputDataPort__PB_html"><div class="ttname"><a href="classInputDataPort__PB.html">InputDataPort_PB</a></div><div class="ttdoc">Splash lLnguageConstructs &gt; PortPrototype &gt; ReceiveInterface &gt; InputStreamPort. </div><div class="ttdef"><b>Definition:</b> <a href="Base__cell_8cpp_source.html#l00012">Base_cell.cpp:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="sample__pb1_8cpp.html">sample_pb1.cpp</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

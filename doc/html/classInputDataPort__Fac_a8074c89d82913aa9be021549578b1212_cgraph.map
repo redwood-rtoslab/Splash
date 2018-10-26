@@ -1,0 +1,4 @@
+<map id="InputDataPort_Fac::checkFreshness" name="InputDataPort_Fac::checkFreshness">
+<area shape="rect" id="node2" href="$classFreshnessMonitor__IP.html#a0527f0f908800c340be5c987e699d0c2" title="FreshnessMonitor_IP\l::check" alt="" coords="193,5,340,47"/>
+<area shape="rect" id="node3" href="$classSystemClock.html#ac51adb5878772576050a1c70b8994244" title="SystemClock::getCurrentTime" alt="" coords="388,13,587,39"/>
+</map>

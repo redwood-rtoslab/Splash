@@ -1,0 +1,15 @@
+module path_information
+{
+	struct Msg
+	{
+		long id;
+		double lateral_distance_error;
+
+	};
+	#pragma keylist Msg id
+
+
+};
+
+
+

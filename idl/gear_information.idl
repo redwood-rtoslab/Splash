@@ -1,0 +1,15 @@
+module gear_information
+{
+	struct Msg
+	{
+		long id;
+		long curr_gear;
+
+	};
+	#pragma keylist Msg id
+
+
+};
+
+
+

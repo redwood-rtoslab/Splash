@@ -1,0 +1,15 @@
+module cruise_gear
+{
+	struct Msg
+	{
+		long id;
+		double curr_gear;
+
+	};
+	#pragma keylist Msg id
+
+
+};
+
+
+

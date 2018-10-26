@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>RTOS Splash: SystemClock</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RTOS Splash
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+      <li><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="inherits.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classSystemClock.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">정적 Public 멤버 함수</a> &#124;
+<a href="classSystemClock-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">SystemClock</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clock class of current system.  
+ <a href="classSystemClock.html#details">더 자세히 ...</a></p>
+<div class="dynheader">
+SystemClock에 대한 협력 다이어그램:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSystemClock__coll__graph.png" border="0" usemap="#SystemClock_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+정적 Public 멤버 함수</h2></td></tr>
+<tr class="memitem:ac51adb5878772576050a1c70b8994244"><td class="memItemLeft" align="right" valign="top">static int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSystemClock.html#ac51adb5878772576050a1c70b8994244">getCurrentTime</a> ()</td></tr>
+<tr class="separator:ac51adb5878772576050a1c70b8994244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><p>Clock class of current system. </p>
+<p>This clock implemented by using std::chrono library. DDS independent class. </p><dl class="section author"><dt>작성자</dt><dd>Beomjoon Yang </dd></dl>
+<dl class="section date"><dt>날짜</dt><dd>2018-10-26 </dd></dl>
+<dl class="section version"><dt>버전</dt><dd>0.0.1 </dd></dl>
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00059">59</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">멤버 함수 문서화</h2>
+<a class="anchor" id="ac51adb5878772576050a1c70b8994244"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t SystemClock::getCurrentTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00065">65</a> 번째 라인에서 정의되었습니다.</p>
+
+<p>다음에 의해서 참조됨 :  <a class="el" href="Processing__block_8cpp_source.html#l00101">FreshnessMonitor_IP::check()</a>, <a class="el" href="Processing__block_8cpp_source.html#l00173">DeadlineMonitor_PB::check()</a>, <a class="el" href="Factory_8cpp_source.html#l00248">Factory&lt; Data_0, Data_1, Data_2, Data_3, Data_4, Data_5, Data_6, Data_7, Data_8, Data_9 &gt;::checkDeadline()</a>, <a class="el" href="sample__fac_8cpp_source.html#l00012">fac_1_deadline_handler()</a>, <a class="el" href="sample__fac_8cpp_source.html#l00022">fac_1_freshness_handler()</a>, <a class="el" href="sample__fac_8cpp_source.html#l00017">fac_1_input_rate_handler()</a>, <a class="el" href="Factory_8cpp_source.html#l01088">Factory&lt; Data_0, Data_1, Data_2, Data_3, Data_4, Data_5, Data_6, Data_7, Data_8, Data_9 &gt;::FOP_create()</a>, <a class="el" href="Processing__block_8cpp_source.html#l01078">OutputDataPort_PB&lt; Data_0, Data_1, Data_2, Data_3, Data_4, Data_5, Data_6, Data_7, Data_8, Data_9 &gt;::initialize()</a>, <a class="el" href="sample__pb1_8cpp_source.html#l00019">pb_1_deadline_handler()</a>, <a class="el" href="sample__pb1_8cpp_source.html#l00024">pb_1_freshness_handler()</a>, <a class="el" href="sample__pb1_8cpp_source.html#l00008">pb_1_input_rate_handler()</a>, <a class="el" href="sample__pb1_8cpp_source.html#l00014">pb_1_output_rate_handler()</a>, <a class="el" href="Processing__block_8cpp_source.html#l00154">DeadlineMonitor_PB::save()</a>, <a class="el" href="Factory_8cpp_source.html#l00062">DeadlineMonitor_Fac::update()</a>.</p>
+
+<p><div class="dynheader">
+이 함수를 호출하는 함수들에 대한 그래프입니다.:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSystemClock_ac51adb5878772576050a1c70b8994244_icgraph.png" border="0" usemap="#classSystemClock_ac51adb5878772576050a1c70b8994244_icgraph" alt=""/></div>
+<map name="classSystemClock_ac51adb5878772576050a1c70b8994244_icgraph" id="classSystemClock_ac51adb5878772576050a1c70b8994244_icgraph">
+<area shape="rect" id="node2" href="classFreshnessMonitor__IP.html#a0527f0f908800c340be5c987e699d0c2" title="FreshnessMonitor_IP\l::check" alt="" coords="264,35,411,76"/>
+<area shape="rect" id="node5" href="classDeadlineMonitor__PB.html#a7debcade9bbf07add3752aa980bc3b19" title="DeadlineMonitor_PB\l::check" alt="" coords="267,100,408,141"/>
+<area shape="rect" id="node6" href="classFactory.html#a7f2a51ac39c034ccc0923eaa39cff780" title="Factory::checkDeadline" alt="" coords="257,166,417,193"/>
+<area shape="rect" id="node7" href="sample__fac_8cpp.html#a0738328e230c359335fb471c2d046186" title="fac_1_deadline_handler" alt="" coords="258,217,417,243"/>
+<area shape="rect" id="node8" href="sample__fac_8cpp.html#a1c7c3836efb5f56e7db27a52a9310411" title="fac_1_freshness_handler" alt="" coords="254,267,421,294"/>
+<area shape="rect" id="node9" href="sample__fac_8cpp.html#a6667783ac0c5946f340cfb7f9d7ef290" title="fac_1_input_rate_handler" alt="" coords="254,318,421,345"/>
+<area shape="rect" id="node10" href="classFactory.html#a37a09c78d3bf8fb3df5ece85bace2733" title="Factory::FOP_create" alt="" coords="265,369,409,395"/>
+<area shape="rect" id="node11" href="classOutputDataPort__PB.html#a7b98a0affb81a4c74a8dfc70eac515ba" title="OutputDataPort_PB::\linitialize" alt="" coords="264,420,411,461"/>
+<area shape="rect" id="node13" href="sample__pb1_8cpp.html#ae2f276c487f9e911c3b7f6037305b914" title="pb_1_deadline_handler" alt="" coords="260,486,415,513"/>
+<area shape="rect" id="node15" href="sample__pb1_8cpp.html#a005ecd9115d1446bdefa1a6a0655465e" title="pb_1_freshness_handler" alt="" coords="256,537,419,563"/>
+<area shape="rect" id="node16" href="sample__pb1_8cpp.html#a4a2016e07db75d53a9bd55f0c7026b40" title="pb_1_input_rate_handler" alt="" coords="256,587,419,614"/>
+<area shape="rect" id="node17" href="sample__pb1_8cpp.html#a5baeec3c3a02afb0583aba9acb57b3a2" title="pb_1_output_rate_handler" alt="" coords="252,638,423,665"/>
+<area shape="rect" id="node18" href="classDeadlineMonitor__PB.html#aa100310cce2b5c63a13edc18d38483e4" title="DeadlineMonitor_PB\l::save" alt="" coords="267,689,408,731"/>
+<area shape="rect" id="node19" href="classDeadlineMonitor__Fac.html#a1302d302e9ec205bf409722523560de8" title="DeadlineMonitor_Fac\l::update" alt="" coords="265,755,410,796"/>
+<area shape="rect" id="node3" href="classInputDataPort__Fac.html#a8074c89d82913aa9be021549578b1212" title="InputDataPort_Fac::\lcheckFreshness" alt="" coords="517,5,657,47"/>
+<area shape="rect" id="node4" href="classInputDataPort__PB.html#a43ed8a54ce27b50a0ac8a33f1f93e938" title="InputDataPort_PB::checkFreshness" alt="" coords="471,71,703,98"/>
+<area shape="rect" id="node12" href="sample__main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="561,427,612,454"/>
+<area shape="rect" id="node14" href="sample__pb1_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="561,562,612,589"/>
+<area shape="rect" id="node20" href="classFactory.html#a5982eaac979b3ef080244ddc5007b690" title="Factory::updateDeadlineFIP" alt="" coords="494,762,679,789"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li>src/<a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classSystemClock.html">SystemClock</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

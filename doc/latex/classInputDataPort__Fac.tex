@@ -1,0 +1,377 @@
+\hypertarget{classInputDataPort__Fac}{}\section{Input\+Data\+Port\+\_\+\+Fac$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}
+\label{classInputDataPort__Fac}\index{Input\+Data\+Port\+\_\+\+Fac$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$@{Input\+Data\+Port\+\_\+\+Fac$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}}
+
+
+Input\+Data\+Port\+\_\+\+Fac$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputDataPort__Fac__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classInputDataPort__Fac_a510e33d0b638c13d002e8e5bd0732ba5}{attach} (\hyperlink{classFactory}{Factory}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$Fact, std\+::string topic, std\+::string connector\+\_\+topic, int topic\+\_\+number)
+\item 
+void \hyperlink{classInputDataPort__Fac_adc03c5ac76d6d2565a28fcd36e2c6fc8}{initialize} (int rate, void($\ast$rate\+\_\+handler)(), int freshness, void($\ast$\hyperlink{sample__main_8cpp_ae2b580f894f38496da91bce6c31e186f}{freshness\+\_\+handler})(), bool queueing, int queue\+\_\+size)
+\item 
+void \hyperlink{classInputDataPort__Fac_a57bb915c4c801305df78d70e3bcb8d5e}{set\+Freshness} (int64\+\_\+t freshness, void($\ast$\hyperlink{sample__main_8cpp_ae2b580f894f38496da91bce6c31e186f}{freshness\+\_\+handler})())
+\item 
+void \hyperlink{classInputDataPort__Fac_a8074c89d82913aa9be021549578b1212}{check\+Freshness} (int64\+\_\+t msg\+\_\+gentime)
+\item 
+int \hyperlink{classInputDataPort__Fac_a5d6fc1047ebdd54c3d6cf375b1f6d171}{attach} (\hyperlink{classFactory}{Factory}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$, std\+::string, std\+::string, int)
+\item 
+void \hyperlink{classInputDataPort__Fac_af5dd3100caaa527c34079201e3297fdc}{initialize} (double, double, bool, int)
+\end{DoxyCompactItemize}
+\subsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+dds\+::sub\+::\+Data\+Reader$<$ Data\+\_\+0 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_ad4336e1795b30d34b8fc78209405173c}{Input\+\_\+reader0}
+\item 
+dds\+::sub\+::\+Data\+Reader$<$ Data\+\_\+1 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_a792017ee994f74bb649bd673ab7fb02a}{Input\+\_\+reader1}
+\item 
+dds\+::sub\+::\+Data\+Reader$<$ Data\+\_\+2 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_a4a0fff757eea71f4c9d28909442d71ac}{Input\+\_\+reader2}
+\item 
+dds\+::sub\+::\+Data\+Reader$<$ Data\+\_\+3 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_ac3626a23fa27c43e0a63aa68f022fc2d}{Input\+\_\+reader3}
+\item 
+dds\+::sub\+::\+Data\+Reader$<$ Data\+\_\+4 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_adfaed3a3a4363088fb1df54b1fb5d6b1}{Input\+\_\+reader4}
+\item 
+dds\+::pub\+::\+Data\+Writer$<$ Data\+\_\+0 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_af0886b8147a82738272b964c85d0ca28}{Input\+\_\+connector0}
+\item 
+dds\+::pub\+::\+Data\+Writer$<$ Data\+\_\+1 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_a8f623a6232415353dbbc2243a3c6f148}{Input\+\_\+connector1}
+\item 
+dds\+::pub\+::\+Data\+Writer$<$ Data\+\_\+2 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_a0f6ab746eaa0b690462afbf40116a4c1}{Input\+\_\+connector2}
+\item 
+dds\+::pub\+::\+Data\+Writer$<$ Data\+\_\+3 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_a8d08f056c60a03f2218652df61a644e3}{Input\+\_\+connector3}
+\item 
+dds\+::pub\+::\+Data\+Writer$<$ Data\+\_\+4 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_a67ee8b26e5d0195ddb518e1bc704112b}{Input\+\_\+connector4}
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFactory}{Factory}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classInputDataPort__Fac_a5978d61d3b32c4610a102e44179ce3c5}{\+\_\+attached\+Factory}
+\item 
+\hyperlink{classFreshnessMonitor__IP}{Freshness\+Monitor\+\_\+\+IP} \hyperlink{classInputDataPort__Fac_ae9458e7627cc26884a106de9d091d399}{\+\_\+freshness\+\_\+monitor}
+\item 
+\hyperlink{classInputRateMonitor__Fac}{Input\+Rate\+Monitor\+\_\+\+Fac}$<$ Data\+\_\+0 $>$ \hyperlink{classInputDataPort__Fac_a91153b4dfaf9af79df3223ec7f17eab2}{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port0}
+\item 
+\hyperlink{classInputRateMonitor__Fac}{Input\+Rate\+Monitor\+\_\+\+Fac}$<$ Data\+\_\+1 $>$ \hyperlink{classInputDataPort__Fac_aaff3c7535d1e29e218a6653e7f874e34}{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port1}
+\item 
+\hyperlink{classInputRateMonitor__Fac}{Input\+Rate\+Monitor\+\_\+\+Fac}$<$ Data\+\_\+2 $>$ \hyperlink{classInputDataPort__Fac_afa172d6bd94489f7634ad91440c10a16}{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port2}
+\item 
+\hyperlink{classInputRateMonitor__Fac}{Input\+Rate\+Monitor\+\_\+\+Fac}$<$ Data\+\_\+3 $>$ \hyperlink{classInputDataPort__Fac_a6675cd4e6a4ccb6b2b8c8535aa9cd9f4}{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port3}
+\item 
+\hyperlink{classInputRateMonitor__Fac}{Input\+Rate\+Monitor\+\_\+\+Fac}$<$ Data\+\_\+4 $>$ \hyperlink{classInputDataPort__Fac_a4fe6b7be1eb68bd69bd8fa62e4a3eb2f}{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port4}
+\item 
+int \hyperlink{classInputDataPort__Fac_ad39fee414d67b42e824bad1a16a3bd87}{\+\_\+topic\+\_\+number}
+\item 
+void $\ast$ \hyperlink{classInputDataPort__Fac_a6c10484e54395bef3479ae6d1bbab04d}{\+\_\+port\+\_\+memory}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+\subsubsection*{template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$\\*
+class Input\+Data\+Port\+\_\+\+Fac$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}
+
+
+
+Factory.\+cpp 파일의 31 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{멤버 함수 문서화}
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!attach@{attach}}
+\index{attach@{attach}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{attach(\+Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$, std\+::string, std\+::string, int)}{attach(Factory< Data_0, Data_1, Data_2, Data_3, Data_4, Data_5, Data_6, Data_7, Data_8, Data_9 > *, std::string, std::string, int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ int {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach (
+\begin{DoxyParamCaption}
+\item[{{\bf Factory}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$}]{, }
+\item[{std\+::string}]{, }
+\item[{std\+::string}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputDataPort__Fac_a5d6fc1047ebdd54c3d6cf375b1f6d171}{}\label{classInputDataPort__Fac_a5d6fc1047ebdd54c3d6cf375b1f6d171}
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!attach@{attach}}
+\index{attach@{attach}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{attach(\+Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$\+Fact, std\+::string topic, std\+::string connector\+\_\+topic, int topic\+\_\+number)}{attach(Factory< Data_0, Data_1, Data_2, Data_3, Data_4, Data_5, Data_6, Data_7, Data_8, Data_9 > *Fact, std::string topic, std::string connector_topic, int topic_number)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ int {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach (
+\begin{DoxyParamCaption}
+\item[{{\bf Factory}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$}]{Fact, }
+\item[{std\+::string}]{topic, }
+\item[{std\+::string}]{connector\+\_\+topic, }
+\item[{int}]{topic\+\_\+number}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputDataPort__Fac_a510e33d0b638c13d002e8e5bd0732ba5}{}\label{classInputDataPort__Fac_a510e33d0b638c13d002e8e5bd0732ba5}
+
+
+Factory.\+cpp 파일의 473 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connected\+\_\+ports, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connector\+\_\+topic0, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connector\+\_\+topic1, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connector\+\_\+topic2, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connector\+\_\+topic3, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connector\+\_\+topic4, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+I\+D\+P0, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+I\+D\+P1, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+I\+D\+P2, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+I\+D\+P3, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+I\+D\+P4, Input\+Rate\+Monitor\+\_\+\+Fac$<$ data\+\_\+t $>$\+::ptr\+\_\+listener(), Input\+Rate\+Monitor\+\_\+\+Fac$<$ data\+\_\+t $>$\+::set\+Listener(), Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic0, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic1, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic2, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic3, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic4.
+
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classInputDataPort__Fac_a510e33d0b638c13d002e8e5bd0732ba5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!check\+Freshness@{check\+Freshness}}
+\index{check\+Freshness@{check\+Freshness}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{check\+Freshness(int64\+\_\+t msg\+\_\+gentime)}{checkFreshness(int64_t msg_gentime)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ void {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::check\+Freshness (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{msg\+\_\+gentime}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputDataPort__Fac_a8074c89d82913aa9be021549578b1212}{}\label{classInputDataPort__Fac_a8074c89d82913aa9be021549578b1212}
+
+
+Factory.\+cpp 파일의 460 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Freshness\+Monitor\+\_\+\+I\+P\+::check().
+
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputDataPort__Fac_a8074c89d82913aa9be021549578b1212_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!initialize@{initialize}}
+\index{initialize@{initialize}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{initialize(double, double, bool, int)}{initialize(double, double, bool, int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ void {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::initialize (
+\begin{DoxyParamCaption}
+\item[{double}]{rate, }
+\item[{double}]{freshness, }
+\item[{bool}]{queueing, }
+\item[{int}]{queue\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputDataPort__Fac_af5dd3100caaa527c34079201e3297fdc}{}\label{classInputDataPort__Fac_af5dd3100caaa527c34079201e3297fdc}
+
+
+Factory\+\_\+old.\+cpp 파일의 319 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  Output\+Data\+Port\+\_\+\+Fac$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach(), Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connected\+\_\+ports, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connector\+\_\+topic5, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connector\+\_\+topic6, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connector\+\_\+topic7, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connector\+\_\+topic8, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connector\+\_\+topic9, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::initialize(), Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+O\+D\+P0, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+O\+D\+P1, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+O\+D\+P2, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+O\+D\+P3, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+O\+D\+P4, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic5, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic6, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic7, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic8, Factory$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic9.
+
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputDataPort__Fac_af5dd3100caaa527c34079201e3297fdc_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!initialize@{initialize}}
+\index{initialize@{initialize}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{initialize(int rate, void($\ast$rate\+\_\+handler)(), int freshness, void($\ast$freshness\+\_\+handler)(), bool queueing, int queue\+\_\+size)}{initialize(int rate, void(*rate_handler)(), int freshness, void(*freshness_handler)(), bool queueing, int queue_size)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ void {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::initialize (
+\begin{DoxyParamCaption}
+\item[{int}]{rate, }
+\item[{void($\ast$)()}]{rate\+\_\+handler, }
+\item[{int}]{freshness, }
+\item[{void($\ast$)()}]{freshness\+\_\+handler, }
+\item[{bool}]{queueing, }
+\item[{int}]{queue\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputDataPort__Fac_adc03c5ac76d6d2565a28fcd36e2c6fc8}{}\label{classInputDataPort__Fac_adc03c5ac76d6d2565a28fcd36e2c6fc8}
+
+
+Factory.\+cpp 파일의 588 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  freshness\+\_\+handler(), Input\+Rate\+Monitor\+\_\+\+Fac$<$ data\+\_\+t $>$\+::run(), Input\+Rate\+Monitor\+\_\+\+Fac$<$ data\+\_\+t $>$\+::setup().
+
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputDataPort__Fac_adc03c5ac76d6d2565a28fcd36e2c6fc8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!set\+Freshness@{set\+Freshness}}
+\index{set\+Freshness@{set\+Freshness}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{set\+Freshness(int64\+\_\+t freshness, void($\ast$freshness\+\_\+handler)())}{setFreshness(int64_t freshness, void(*freshness_handler)())}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ void {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::set\+Freshness (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{freshness, }
+\item[{void($\ast$)()}]{freshness\+\_\+handler}
+\end{DoxyParamCaption}
+)}\hypertarget{classInputDataPort__Fac_a57bb915c4c801305df78d70e3bcb8d5e}{}\label{classInputDataPort__Fac_a57bb915c4c801305df78d70e3bcb8d5e}
+
+
+Factory.\+cpp 파일의 448 번째 라인에서 정의되었습니다.
+
+
+
+다음을 참조함 \+:  freshness\+\_\+handler(), Freshness\+Monitor\+\_\+\+I\+P\+::setup().
+
+
+
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInputDataPort__Fac_a57bb915c4c801305df78d70e3bcb8d5e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{멤버 데이타 문서화}
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!\+\_\+attached\+Factory@{\+\_\+attached\+Factory}}
+\index{\+\_\+attached\+Factory@{\+\_\+attached\+Factory}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{\+\_\+attached\+Factory}{_attachedFactory}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ {\bf Factory}$<$Data\+\_\+0,Data\+\_\+1,Data\+\_\+2,Data\+\_\+3,Data\+\_\+4,Data\+\_\+5,Data\+\_\+6,Data\+\_\+7,Data\+\_\+8,Data\+\_\+9$>$$\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+\_\+attached\+Factory\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputDataPort__Fac_a5978d61d3b32c4610a102e44179ce3c5}{}\label{classInputDataPort__Fac_a5978d61d3b32c4610a102e44179ce3c5}
+
+
+Factory.\+cpp 파일의 406 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!\+\_\+freshness\+\_\+monitor@{\+\_\+freshness\+\_\+monitor}}
+\index{\+\_\+freshness\+\_\+monitor@{\+\_\+freshness\+\_\+monitor}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{\+\_\+freshness\+\_\+monitor}{_freshness_monitor}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ {\bf Freshness\+Monitor\+\_\+\+IP} {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+\_\+freshness\+\_\+monitor\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputDataPort__Fac_ae9458e7627cc26884a106de9d091d399}{}\label{classInputDataPort__Fac_ae9458e7627cc26884a106de9d091d399}
+
+
+Factory.\+cpp 파일의 408 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port0@{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port0}}
+\index{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port0@{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port0}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port0}{_input_rate_monitor_port0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ {\bf Input\+Rate\+Monitor\+\_\+\+Fac}$<$Data\+\_\+0$>$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port0\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputDataPort__Fac_a91153b4dfaf9af79df3223ec7f17eab2}{}\label{classInputDataPort__Fac_a91153b4dfaf9af79df3223ec7f17eab2}
+
+
+Factory.\+cpp 파일의 410 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port1@{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port1}}
+\index{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port1@{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port1}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port1}{_input_rate_monitor_port1}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ {\bf Input\+Rate\+Monitor\+\_\+\+Fac}$<$Data\+\_\+1$>$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port1\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputDataPort__Fac_aaff3c7535d1e29e218a6653e7f874e34}{}\label{classInputDataPort__Fac_aaff3c7535d1e29e218a6653e7f874e34}
+
+
+Factory.\+cpp 파일의 411 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port2@{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port2}}
+\index{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port2@{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port2}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port2}{_input_rate_monitor_port2}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ {\bf Input\+Rate\+Monitor\+\_\+\+Fac}$<$Data\+\_\+2$>$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port2\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputDataPort__Fac_afa172d6bd94489f7634ad91440c10a16}{}\label{classInputDataPort__Fac_afa172d6bd94489f7634ad91440c10a16}
+
+
+Factory.\+cpp 파일의 412 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port3@{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port3}}
+\index{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port3@{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port3}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port3}{_input_rate_monitor_port3}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ {\bf Input\+Rate\+Monitor\+\_\+\+Fac}$<$Data\+\_\+3$>$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port3\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputDataPort__Fac_a6675cd4e6a4ccb6b2b8c8535aa9cd9f4}{}\label{classInputDataPort__Fac_a6675cd4e6a4ccb6b2b8c8535aa9cd9f4}
+
+
+Factory.\+cpp 파일의 413 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port4@{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port4}}
+\index{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port4@{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port4}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port4}{_input_rate_monitor_port4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ {\bf Input\+Rate\+Monitor\+\_\+\+Fac}$<$Data\+\_\+4$>$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+\_\+input\+\_\+rate\+\_\+monitor\+\_\+port4\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputDataPort__Fac_a4fe6b7be1eb68bd69bd8fa62e4a3eb2f}{}\label{classInputDataPort__Fac_a4fe6b7be1eb68bd69bd8fa62e4a3eb2f}
+
+
+Factory.\+cpp 파일의 414 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!\+\_\+port\+\_\+memory@{\+\_\+port\+\_\+memory}}
+\index{\+\_\+port\+\_\+memory@{\+\_\+port\+\_\+memory}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{\+\_\+port\+\_\+memory}{_port_memory}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ void$\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+\_\+port\+\_\+memory\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputDataPort__Fac_a6c10484e54395bef3479ae6d1bbab04d}{}\label{classInputDataPort__Fac_a6c10484e54395bef3479ae6d1bbab04d}
+
+
+Factory.\+cpp 파일의 417 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!\+\_\+topic\+\_\+number@{\+\_\+topic\+\_\+number}}
+\index{\+\_\+topic\+\_\+number@{\+\_\+topic\+\_\+number}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{\+\_\+topic\+\_\+number}{_topic_number}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ int {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::\+\_\+topic\+\_\+number\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classInputDataPort__Fac_ad39fee414d67b42e824bad1a16a3bd87}{}\label{classInputDataPort__Fac_ad39fee414d67b42e824bad1a16a3bd87}
+
+
+Factory.\+cpp 파일의 416 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!Input\+\_\+connector0@{Input\+\_\+connector0}}
+\index{Input\+\_\+connector0@{Input\+\_\+connector0}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{Input\+\_\+connector0}{Input_connector0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ dds\+::pub\+::\+Data\+Writer$<$ Data\+\_\+0 $>$ $\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::Input\+\_\+connector0}\hypertarget{classInputDataPort__Fac_af0886b8147a82738272b964c85d0ca28}{}\label{classInputDataPort__Fac_af0886b8147a82738272b964c85d0ca28}
+
+
+Factory.\+cpp 파일의 427 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!Input\+\_\+connector1@{Input\+\_\+connector1}}
+\index{Input\+\_\+connector1@{Input\+\_\+connector1}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{Input\+\_\+connector1}{Input_connector1}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ dds\+::pub\+::\+Data\+Writer$<$ Data\+\_\+1 $>$ $\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::Input\+\_\+connector1}\hypertarget{classInputDataPort__Fac_a8f623a6232415353dbbc2243a3c6f148}{}\label{classInputDataPort__Fac_a8f623a6232415353dbbc2243a3c6f148}
+
+
+Factory.\+cpp 파일의 428 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!Input\+\_\+connector2@{Input\+\_\+connector2}}
+\index{Input\+\_\+connector2@{Input\+\_\+connector2}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{Input\+\_\+connector2}{Input_connector2}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ dds\+::pub\+::\+Data\+Writer$<$ Data\+\_\+2 $>$ $\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::Input\+\_\+connector2}\hypertarget{classInputDataPort__Fac_a0f6ab746eaa0b690462afbf40116a4c1}{}\label{classInputDataPort__Fac_a0f6ab746eaa0b690462afbf40116a4c1}
+
+
+Factory.\+cpp 파일의 429 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!Input\+\_\+connector3@{Input\+\_\+connector3}}
+\index{Input\+\_\+connector3@{Input\+\_\+connector3}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{Input\+\_\+connector3}{Input_connector3}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ dds\+::pub\+::\+Data\+Writer$<$ Data\+\_\+3 $>$ $\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::Input\+\_\+connector3}\hypertarget{classInputDataPort__Fac_a8d08f056c60a03f2218652df61a644e3}{}\label{classInputDataPort__Fac_a8d08f056c60a03f2218652df61a644e3}
+
+
+Factory.\+cpp 파일의 430 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!Input\+\_\+connector4@{Input\+\_\+connector4}}
+\index{Input\+\_\+connector4@{Input\+\_\+connector4}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{Input\+\_\+connector4}{Input_connector4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ dds\+::pub\+::\+Data\+Writer$<$ Data\+\_\+4 $>$ $\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::Input\+\_\+connector4}\hypertarget{classInputDataPort__Fac_a67ee8b26e5d0195ddb518e1bc704112b}{}\label{classInputDataPort__Fac_a67ee8b26e5d0195ddb518e1bc704112b}
+
+
+Factory.\+cpp 파일의 431 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!Input\+\_\+reader0@{Input\+\_\+reader0}}
+\index{Input\+\_\+reader0@{Input\+\_\+reader0}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{Input\+\_\+reader0}{Input_reader0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ dds\+::sub\+::\+Data\+Reader$<$ Data\+\_\+0 $>$ $\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::Input\+\_\+reader0}\hypertarget{classInputDataPort__Fac_ad4336e1795b30d34b8fc78209405173c}{}\label{classInputDataPort__Fac_ad4336e1795b30d34b8fc78209405173c}
+
+
+Factory.\+cpp 파일의 421 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!Input\+\_\+reader1@{Input\+\_\+reader1}}
+\index{Input\+\_\+reader1@{Input\+\_\+reader1}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{Input\+\_\+reader1}{Input_reader1}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ dds\+::sub\+::\+Data\+Reader$<$ Data\+\_\+1 $>$ $\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::Input\+\_\+reader1}\hypertarget{classInputDataPort__Fac_a792017ee994f74bb649bd673ab7fb02a}{}\label{classInputDataPort__Fac_a792017ee994f74bb649bd673ab7fb02a}
+
+
+Factory.\+cpp 파일의 422 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!Input\+\_\+reader2@{Input\+\_\+reader2}}
+\index{Input\+\_\+reader2@{Input\+\_\+reader2}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{Input\+\_\+reader2}{Input_reader2}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ dds\+::sub\+::\+Data\+Reader$<$ Data\+\_\+2 $>$ $\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::Input\+\_\+reader2}\hypertarget{classInputDataPort__Fac_a4a0fff757eea71f4c9d28909442d71ac}{}\label{classInputDataPort__Fac_a4a0fff757eea71f4c9d28909442d71ac}
+
+
+Factory.\+cpp 파일의 423 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!Input\+\_\+reader3@{Input\+\_\+reader3}}
+\index{Input\+\_\+reader3@{Input\+\_\+reader3}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{Input\+\_\+reader3}{Input_reader3}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ dds\+::sub\+::\+Data\+Reader$<$ Data\+\_\+3 $>$ $\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::Input\+\_\+reader3}\hypertarget{classInputDataPort__Fac_ac3626a23fa27c43e0a63aa68f022fc2d}{}\label{classInputDataPort__Fac_ac3626a23fa27c43e0a63aa68f022fc2d}
+
+
+Factory.\+cpp 파일의 424 번째 라인에서 정의되었습니다.
+
+\index{Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}!Input\+\_\+reader4@{Input\+\_\+reader4}}
+\index{Input\+\_\+reader4@{Input\+\_\+reader4}!Input\+Data\+Port\+\_\+\+Fac@{Input\+Data\+Port\+\_\+\+Fac}}
+\subsubsection[{\texorpdfstring{Input\+\_\+reader4}{Input_reader4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ dds\+::sub\+::\+Data\+Reader$<$ Data\+\_\+4 $>$ $\ast$ {\bf Input\+Data\+Port\+\_\+\+Fac}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::Input\+\_\+reader4}\hypertarget{classInputDataPort__Fac_adfaed3a3a4363088fb1df54b1fb5d6b1}{}\label{classInputDataPort__Fac_adfaed3a3a4363088fb1df54b1fb5d6b1}
+
+
+Factory.\+cpp 파일의 425 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Factory_8cpp}{Factory.\+cpp}\item 
+src/\hyperlink{Factory__old_8cpp}{Factory\+\_\+old.\+cpp}\end{DoxyCompactItemize}

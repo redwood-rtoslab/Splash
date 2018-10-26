@@ -1,0 +1,21 @@
+module default_data
+{
+	struct Msg
+	{
+		long id;
+
+		string message;
+
+		long long constraint_deadline_duetime;
+        long long constraint_freshness_gentime;
+
+        long long sensor_data;
+
+	};
+	#pragma keylist Msg id
+
+
+};
+
+
+

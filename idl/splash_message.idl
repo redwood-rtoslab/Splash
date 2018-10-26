@@ -1,0 +1,50 @@
+module splash_message
+{
+	struct  new_record {
+		 boolean  a;
+		 string<28>  sibal;
+	};
+	#pragma keylist new_record a
+	
+	struct msg0 {
+		long id;
+		boolean  k;
+	};
+	#pragma keylist msg0 id
+
+	struct msg1 {
+		long id;
+		double  a;
+		double  b;
+	};
+	#pragma keylist msg1 id
+
+	struct msg2 {
+		long id;
+		short  sibal;
+	};
+	#pragma keylist msg2 id
+
+	struct msg3 {
+		long id;
+		string<14>  str;
+		long long  sisi;
+	};
+	#pragma keylist msg3 id
+
+	struct msg4 {
+		long id;
+		float  a;
+		long  kk;
+	};
+	#pragma keylist msg4 id
+
+	struct msg5 {
+		long id;
+		char  cc;
+		new_record A;
+		void E;
+	};
+	#pragma keylist msg5 id
+
+};

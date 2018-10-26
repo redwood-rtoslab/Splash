@@ -1,0 +1,99 @@
+# -*-Makefile-*-
+#----------------------------------------------------------------------------
+#       Macros
+#----------------------------------------------------------------------------
+
+CC            = gcc
+CXX           = g++
+LD            = $(CXX) $(CCFLAGS) $(PICFLAGS) $(GENFLAGS)
+AR            = ar
+PICFLAGS      = -fPIC
+CCFLAGS        =  
+CPPFLAGS      = $(PICFLAGS) $(GENFLAGS) -D_REENTRANT -D_POSIX_C_SOURCE=200112L -D_XOPEN_SOURCE=500 -Wall -Wno-unused-function -std=c++0x -I"/home/bjyang/HDE/x86_64.linux/include" -I"/home/bjyang/HDE/x86_64.linux/include/sys" -I"$(BOOST_ROOT)/." -I"/home/bjyang/HDE/x86_64.linux/include/dcps/C++/isocpp2" -I"/home/bjyang/HDE/x86_64.linux/include/dcps/C++/SACPP" -I"."
+
+OBJEXT        = .o
+OUTPUT_OPTION = -o "$@"
+COMPILE.c     = $(CC) $(CFLAGS) $(CPPFLAGS) -c
+COMPILE.cc    = $(CXX) $(CCFLAGS) $(CPPFLAGS) -c
+LDFLAGS       = -L"." -L"/home/bjyang/HDE/x86_64.linux/lib" -Wl,-rpath,\$$ORIGIN -Wl,-rpath,\$$/home/bjyang/HDE/x86_64.linux/lib
+CCC           = $(CXX)
+MAKEFILE      = Makefile.junk_6_Types
+DEPENDENCIES  = $(MAKEFILE)
+LTARGETDIR    = ./
+CAT           = cat
+MV            = mv -f
+RM            = rm -rf
+CP            = cp -p
+NUL           = /dev/null
+MKDIR         = mkdir -p
+TESTDIRSTART  = test -d
+TESTDIREND    = ||
+TOUCH         = touch
+EXEEXT        = 
+LIBPREFIX     = lib
+LIBSUFFIX     = 
+GENFLAGS      = -O3 -DNDEBUG
+LDLIBS        = -l"dcpsisocpp2$(LIBSUFFIX)" -l"ddskernel" -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
+OBJS          = .obj$(CFG)/junk_6SplDcps$(OBJEXT) .obj$(CFG)/junk_6$(OBJEXT)
+AREXT         = .a
+LIB           = $(LTARGETDIR)$(LIBPREFIX)junk_6_Types$(LIBSUFFIX)$(AREXT)
+SOEXT         = .so
+SHTARGETDIR   = ./
+SHLIB         = $(SHTARGETDIR)$(LIBPREFIX)junk_6_Types$(LIBSUFFIX)$(SOEXT)
+SHFLAGS       = -shared
+SRC           = data_type_files/junk_6SplDcps.cpp data_type_files/junk_6.cpp
+LINK.cc       = $(LD) $(LDFLAGS)
+DYNAMICFLAGS  = -DOSPL_BUILDEXAMPLE_LIB
+EXPORTFLAGS   = $(DYNAMICFLAGS)
+
+#----------------------------------------------------------------------------
+#       Local targets
+#----------------------------------------------------------------------------
+
+all: $(SHLIB)
+
+$(SHLIB): $(OBJS)
+	@$(TESTDIRSTART) "$(SHTARGETDIR)" $(TESTDIREND) $(MKDIR) "$(SHTARGETDIR)"
+	$(LINK.cc) $(SHFLAGS) $(OBJS) $(LDLIBS) $(OUTPUT_OPTION)
+
+$(LIB): $(OBJS)
+	@$(TESTDIRSTART) "$(LTARGETDIR)" $(TESTDIREND) $(MKDIR) "$(LTARGETDIR)"
+	$(AR) $(ARFLAGS) $(LIB) $(OBJS) 
+
+GENERATED_DIRTY = junk_6SplDcps.cpp junk_6.cpp junk_6.h junk_6_DCPS.hpp junk_6SplDcps.h
+
+export DYLD_LIBRARY_PATH := $(DYLD_LIBRARY_PATH):/home/bjyang/HDE/x86_64.linux/bin:/home/bjyang/HDE/x86_64.linux/lib
+export LD_LIBRARY_PATH   := $(LD_LIBRARY_PATH):/home/bjyang/HDE/x86_64.linux/bin:/home/bjyang/HDE/x86_64.linux/lib
+export SHLIB_PATH        := $(SHLIB_PATH):/home/bjyang/HDE/x86_64.linux/bin:/home/bjyang/HDE/x86_64.linux/lib
+export LIBPATH           := $(LIBPATH):/home/bjyang/HDE/x86_64.linux/bin:/home/bjyang/HDE/x86_64.linux/lib
+export PATH              := $(PATH):/home/bjyang/HDE/x86_64.linux/bin:/home/bjyang/HDE/x86_64.linux/lib
+
+.NOTPARALLEL:
+junk_6SplDcps.cpp junk_6.cpp junk_6.h junk_6_DCPS.hpp junk_6SplDcps.h: ../idl/junk_6.idl
+	"/home/bjyang/HDE/x86_64.linux/bin/idlpp" -I "/home/bjyang/HDE/x86_64.linux/etc/idl" -l isocpp2 -d data_type_files ../idl/junk_6.idl
+
+.PRECIOUS: $(GENERATED_DIRTY)
+$(OBJS): $(GENERATED_DIRTY)
+
+generated: $(GENERATED_DIRTY)
+	@-:
+
+.obj$(CFG)/junk_6SplDcps$(OBJEXT): data_type_files/junk_6SplDcps.cpp
+	@$(TESTDIRSTART) ".obj$(CFG)/" $(TESTDIREND) $(MKDIR) ".obj$(CFG)/"
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) data_type_files/junk_6SplDcps.cpp
+
+.obj$(CFG)/junk_6$(OBJEXT): data_type_files/junk_6.cpp
+	@$(TESTDIRSTART) ".obj$(CFG)/" $(TESTDIREND) $(MKDIR) ".obj$(CFG)/"
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) data_type_files/junk_6.cpp
+
+clean:
+	-$(RM) $(OBJS)
+
+realclean: clean
+	-$(RM) $(SHLIB) $(LIB)
+	-$(RM) $(GENERATED_DIRTY)
+	-$(RM) .obj$(CFG)/
+
+check-syntax:
+	$(COMPILE.cc) $(EXPORTFLAGS) $(CHK_SOURCES)
+

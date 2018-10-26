@@ -1,0 +1,223 @@
+\hypertarget{classConstraintPassingManager__PB}{}\section{Constraint\+Passing\+Manager\+\_\+\+PB}
+\label{classConstraintPassingManager__PB}\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+
+
+Pass two time constriant variables from input messages to output messages.  
+
+
+
+
+Constraint\+Passing\+Manager\+\_\+\+P\+B에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{classConstraintPassingManager__PB__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classConstraintPassingManager__PB_a8da0b01c95f6eb6991ed763bc7151a0f}{set\+Port\+Mapping\+Freshness} (int inputport\+\_\+num, int outputport\+\_\+num)
+\item 
+void \hyperlink{classConstraintPassingManager__PB_a05e635543ffe3a2cd25c26c348812d09}{set\+Port\+Mapping\+Factory\+Deadline} (int inputport\+\_\+num, int outputport\+\_\+num)
+\item 
+void \hyperlink{classConstraintPassingManager__PB_ab1569a1c4dc95157e77ac43eed44e28a}{save\+Freshness} (int inputport\+\_\+num, int64\+\_\+t gentime)
+\item 
+void \hyperlink{classConstraintPassingManager__PB_af9984e913275a946bf4c8fb772f49225}{save\+Factory\+Deadline} (int inputport\+\_\+num, int64\+\_\+t duetime)
+\item 
+int64\+\_\+t \hyperlink{classConstraintPassingManager__PB_aaea8253b7002edd6272ae4ee36617566}{load\+Freshness} (int inputport\+\_\+num)
+\item 
+int64\+\_\+t \hyperlink{classConstraintPassingManager__PB_a10289fbb94c1b7d943e46ff814090805}{load\+Factory\+Deadline} (int inputport\+\_\+num)
+\item 
+int \hyperlink{classConstraintPassingManager__PB_addd726c7327487a745c64086574c6888}{find\+Input\+Port\+Freshness} (int outputport\+\_\+num)
+\item 
+int \hyperlink{classConstraintPassingManager__PB_aaf738795807249b71091a9155a2a838d}{find\+Input\+Port\+Factory\+Deadline} (int outputport\+\_\+num)
+\item 
+int64\+\_\+t \hyperlink{classConstraintPassingManager__PB_adac2cc79ac0b3f68d7a066bbae35486f}{take\+Freshness} (int outputport\+\_\+num)
+\item 
+int64\+\_\+t \hyperlink{classConstraintPassingManager__PB_a560d29d55761fbc597b6a694722ae665}{take\+Factory\+Deadline} (int outputport\+\_\+num)
+\end{DoxyCompactItemize}
+\subsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::bitset$<$ 5 $>$ \hyperlink{classConstraintPassingManager__PB_a34c12f7a79cb6c7a6c68bf63e17fed65}{\+\_\+freshness\+\_\+port\+\_\+mapping} \mbox{[}5\mbox{]}
+\item 
+std\+::bitset$<$ 5 $>$ \hyperlink{classConstraintPassingManager__PB_ac9c7c8ece56f6b66647da4793fdbcdd5}{\+\_\+factory\+\_\+deadline\+\_\+port\+\_\+mapping} \mbox{[}5\mbox{]}
+\item 
+int64\+\_\+t \hyperlink{classConstraintPassingManager__PB_ab06613fe88e472ed575a09e32d60bf67}{\+\_\+freshnesses} \mbox{[}5\mbox{]} = \{-\/1, -\/1, -\/1, -\/1, -\/1\}
+\item 
+int64\+\_\+t \hyperlink{classConstraintPassingManager__PB_a1a7e67da1e921de5f66eb9bf676ea945}{\+\_\+factory\+\_\+deadlines} \mbox{[}5\mbox{]} = \{-\/1, -\/1, -\/1, -\/1, -\/1\}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+Pass two time constriant variables from input messages to output messages. 
+
+\begin{DoxyRefDesc}{할일}
+\item[\hyperlink{todo__todo000003}{할일}]modify every methods to correspond with new definition of message timestamp and deadline constraint \end{DoxyRefDesc}
+\begin{DoxyAuthor}{작성자}
+Beomjoon Yang 
+\end{DoxyAuthor}
+\begin{DoxyDate}{날짜}
+2018-\/10-\/26 
+\end{DoxyDate}
+\begin{DoxyVersion}{버전}
+0.\+0.\+1 
+\end{DoxyVersion}
+
+
+Processing\+\_\+block.\+cpp 파일의 200 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{멤버 함수 문서화}
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!find\+Input\+Port\+Factory\+Deadline@{find\+Input\+Port\+Factory\+Deadline}}
+\index{find\+Input\+Port\+Factory\+Deadline@{find\+Input\+Port\+Factory\+Deadline}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{find\+Input\+Port\+Factory\+Deadline(int outputport\+\_\+num)}{findInputPortFactoryDeadline(int outputport_num)}}]{\setlength{\rightskip}{0pt plus 5cm}int Constraint\+Passing\+Manager\+\_\+\+P\+B\+::find\+Input\+Port\+Factory\+Deadline (
+\begin{DoxyParamCaption}
+\item[{int}]{outputport\+\_\+num}
+\end{DoxyParamCaption}
+)}\hypertarget{classConstraintPassingManager__PB_aaf738795807249b71091a9155a2a838d}{}\label{classConstraintPassingManager__PB_aaf738795807249b71091a9155a2a838d}
+
+
+Processing\+\_\+block.\+cpp 파일의 281 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!find\+Input\+Port\+Freshness@{find\+Input\+Port\+Freshness}}
+\index{find\+Input\+Port\+Freshness@{find\+Input\+Port\+Freshness}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{find\+Input\+Port\+Freshness(int outputport\+\_\+num)}{findInputPortFreshness(int outputport_num)}}]{\setlength{\rightskip}{0pt plus 5cm}int Constraint\+Passing\+Manager\+\_\+\+P\+B\+::find\+Input\+Port\+Freshness (
+\begin{DoxyParamCaption}
+\item[{int}]{outputport\+\_\+num}
+\end{DoxyParamCaption}
+)}\hypertarget{classConstraintPassingManager__PB_addd726c7327487a745c64086574c6888}{}\label{classConstraintPassingManager__PB_addd726c7327487a745c64086574c6888}
+
+
+Processing\+\_\+block.\+cpp 파일의 272 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!load\+Factory\+Deadline@{load\+Factory\+Deadline}}
+\index{load\+Factory\+Deadline@{load\+Factory\+Deadline}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{load\+Factory\+Deadline(int inputport\+\_\+num)}{loadFactoryDeadline(int inputport_num)}}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Constraint\+Passing\+Manager\+\_\+\+P\+B\+::load\+Factory\+Deadline (
+\begin{DoxyParamCaption}
+\item[{int}]{inputport\+\_\+num}
+\end{DoxyParamCaption}
+)}\hypertarget{classConstraintPassingManager__PB_a10289fbb94c1b7d943e46ff814090805}{}\label{classConstraintPassingManager__PB_a10289fbb94c1b7d943e46ff814090805}
+
+
+Processing\+\_\+block.\+cpp 파일의 264 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!load\+Freshness@{load\+Freshness}}
+\index{load\+Freshness@{load\+Freshness}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{load\+Freshness(int inputport\+\_\+num)}{loadFreshness(int inputport_num)}}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Constraint\+Passing\+Manager\+\_\+\+P\+B\+::load\+Freshness (
+\begin{DoxyParamCaption}
+\item[{int}]{inputport\+\_\+num}
+\end{DoxyParamCaption}
+)}\hypertarget{classConstraintPassingManager__PB_aaea8253b7002edd6272ae4ee36617566}{}\label{classConstraintPassingManager__PB_aaea8253b7002edd6272ae4ee36617566}
+
+
+Processing\+\_\+block.\+cpp 파일의 260 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!save\+Factory\+Deadline@{save\+Factory\+Deadline}}
+\index{save\+Factory\+Deadline@{save\+Factory\+Deadline}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{save\+Factory\+Deadline(int inputport\+\_\+num, int64\+\_\+t duetime)}{saveFactoryDeadline(int inputport_num, int64_t duetime)}}]{\setlength{\rightskip}{0pt plus 5cm}void Constraint\+Passing\+Manager\+\_\+\+P\+B\+::save\+Factory\+Deadline (
+\begin{DoxyParamCaption}
+\item[{int}]{inputport\+\_\+num, }
+\item[{int64\+\_\+t}]{duetime}
+\end{DoxyParamCaption}
+)}\hypertarget{classConstraintPassingManager__PB_af9984e913275a946bf4c8fb772f49225}{}\label{classConstraintPassingManager__PB_af9984e913275a946bf4c8fb772f49225}
+
+
+Processing\+\_\+block.\+cpp 파일의 251 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!save\+Freshness@{save\+Freshness}}
+\index{save\+Freshness@{save\+Freshness}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{save\+Freshness(int inputport\+\_\+num, int64\+\_\+t gentime)}{saveFreshness(int inputport_num, int64_t gentime)}}]{\setlength{\rightskip}{0pt plus 5cm}void Constraint\+Passing\+Manager\+\_\+\+P\+B\+::save\+Freshness (
+\begin{DoxyParamCaption}
+\item[{int}]{inputport\+\_\+num, }
+\item[{int64\+\_\+t}]{gentime}
+\end{DoxyParamCaption}
+)}\hypertarget{classConstraintPassingManager__PB_ab1569a1c4dc95157e77ac43eed44e28a}{}\label{classConstraintPassingManager__PB_ab1569a1c4dc95157e77ac43eed44e28a}
+
+
+Processing\+\_\+block.\+cpp 파일의 246 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!set\+Port\+Mapping\+Factory\+Deadline@{set\+Port\+Mapping\+Factory\+Deadline}}
+\index{set\+Port\+Mapping\+Factory\+Deadline@{set\+Port\+Mapping\+Factory\+Deadline}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{set\+Port\+Mapping\+Factory\+Deadline(int inputport\+\_\+num, int outputport\+\_\+num)}{setPortMappingFactoryDeadline(int inputport_num, int outputport_num)}}]{\setlength{\rightskip}{0pt plus 5cm}void Constraint\+Passing\+Manager\+\_\+\+P\+B\+::set\+Port\+Mapping\+Factory\+Deadline (
+\begin{DoxyParamCaption}
+\item[{int}]{inputport\+\_\+num, }
+\item[{int}]{outputport\+\_\+num}
+\end{DoxyParamCaption}
+)}\hypertarget{classConstraintPassingManager__PB_a05e635543ffe3a2cd25c26c348812d09}{}\label{classConstraintPassingManager__PB_a05e635543ffe3a2cd25c26c348812d09}
+
+
+Processing\+\_\+block.\+cpp 파일의 238 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!set\+Port\+Mapping\+Freshness@{set\+Port\+Mapping\+Freshness}}
+\index{set\+Port\+Mapping\+Freshness@{set\+Port\+Mapping\+Freshness}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{set\+Port\+Mapping\+Freshness(int inputport\+\_\+num, int outputport\+\_\+num)}{setPortMappingFreshness(int inputport_num, int outputport_num)}}]{\setlength{\rightskip}{0pt plus 5cm}void Constraint\+Passing\+Manager\+\_\+\+P\+B\+::set\+Port\+Mapping\+Freshness (
+\begin{DoxyParamCaption}
+\item[{int}]{inputport\+\_\+num, }
+\item[{int}]{outputport\+\_\+num}
+\end{DoxyParamCaption}
+)}\hypertarget{classConstraintPassingManager__PB_a8da0b01c95f6eb6991ed763bc7151a0f}{}\label{classConstraintPassingManager__PB_a8da0b01c95f6eb6991ed763bc7151a0f}
+
+
+Processing\+\_\+block.\+cpp 파일의 234 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!take\+Factory\+Deadline@{take\+Factory\+Deadline}}
+\index{take\+Factory\+Deadline@{take\+Factory\+Deadline}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{take\+Factory\+Deadline(int outputport\+\_\+num)}{takeFactoryDeadline(int outputport_num)}}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Constraint\+Passing\+Manager\+\_\+\+P\+B\+::take\+Factory\+Deadline (
+\begin{DoxyParamCaption}
+\item[{int}]{outputport\+\_\+num}
+\end{DoxyParamCaption}
+)}\hypertarget{classConstraintPassingManager__PB_a560d29d55761fbc597b6a694722ae665}{}\label{classConstraintPassingManager__PB_a560d29d55761fbc597b6a694722ae665}
+
+
+Processing\+\_\+block.\+cpp 파일의 305 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!take\+Freshness@{take\+Freshness}}
+\index{take\+Freshness@{take\+Freshness}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{take\+Freshness(int outputport\+\_\+num)}{takeFreshness(int outputport_num)}}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Constraint\+Passing\+Manager\+\_\+\+P\+B\+::take\+Freshness (
+\begin{DoxyParamCaption}
+\item[{int}]{outputport\+\_\+num}
+\end{DoxyParamCaption}
+)}\hypertarget{classConstraintPassingManager__PB_adac2cc79ac0b3f68d7a066bbae35486f}{}\label{classConstraintPassingManager__PB_adac2cc79ac0b3f68d7a066bbae35486f}
+
+
+Processing\+\_\+block.\+cpp 파일의 299 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{멤버 데이타 문서화}
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!\+\_\+factory\+\_\+deadline\+\_\+port\+\_\+mapping@{\+\_\+factory\+\_\+deadline\+\_\+port\+\_\+mapping}}
+\index{\+\_\+factory\+\_\+deadline\+\_\+port\+\_\+mapping@{\+\_\+factory\+\_\+deadline\+\_\+port\+\_\+mapping}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{\+\_\+factory\+\_\+deadline\+\_\+port\+\_\+mapping}{_factory_deadline_port_mapping}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::bitset$<$5$>$ Constraint\+Passing\+Manager\+\_\+\+P\+B\+::\+\_\+factory\+\_\+deadline\+\_\+port\+\_\+mapping\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classConstraintPassingManager__PB_ac9c7c8ece56f6b66647da4793fdbcdd5}{}\label{classConstraintPassingManager__PB_ac9c7c8ece56f6b66647da4793fdbcdd5}
+
+
+Processing\+\_\+block.\+cpp 파일의 225 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!\+\_\+factory\+\_\+deadlines@{\+\_\+factory\+\_\+deadlines}}
+\index{\+\_\+factory\+\_\+deadlines@{\+\_\+factory\+\_\+deadlines}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{\+\_\+factory\+\_\+deadlines}{_factory_deadlines}}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Constraint\+Passing\+Manager\+\_\+\+P\+B\+::\+\_\+factory\+\_\+deadlines\mbox{[}5\mbox{]} = \{-\/1, -\/1, -\/1, -\/1, -\/1\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classConstraintPassingManager__PB_a1a7e67da1e921de5f66eb9bf676ea945}{}\label{classConstraintPassingManager__PB_a1a7e67da1e921de5f66eb9bf676ea945}
+
+
+Processing\+\_\+block.\+cpp 파일의 229 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!\+\_\+freshness\+\_\+port\+\_\+mapping@{\+\_\+freshness\+\_\+port\+\_\+mapping}}
+\index{\+\_\+freshness\+\_\+port\+\_\+mapping@{\+\_\+freshness\+\_\+port\+\_\+mapping}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{\+\_\+freshness\+\_\+port\+\_\+mapping}{_freshness_port_mapping}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::bitset$<$5$>$ Constraint\+Passing\+Manager\+\_\+\+P\+B\+::\+\_\+freshness\+\_\+port\+\_\+mapping\mbox{[}5\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classConstraintPassingManager__PB_a34c12f7a79cb6c7a6c68bf63e17fed65}{}\label{classConstraintPassingManager__PB_a34c12f7a79cb6c7a6c68bf63e17fed65}
+
+
+Processing\+\_\+block.\+cpp 파일의 224 번째 라인에서 정의되었습니다.
+
+\index{Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}!\+\_\+freshnesses@{\+\_\+freshnesses}}
+\index{\+\_\+freshnesses@{\+\_\+freshnesses}!Constraint\+Passing\+Manager\+\_\+\+PB@{Constraint\+Passing\+Manager\+\_\+\+PB}}
+\subsubsection[{\texorpdfstring{\+\_\+freshnesses}{_freshnesses}}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t Constraint\+Passing\+Manager\+\_\+\+P\+B\+::\+\_\+freshnesses\mbox{[}5\mbox{]} = \{-\/1, -\/1, -\/1, -\/1, -\/1\}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classConstraintPassingManager__PB_ab06613fe88e472ed575a09e32d60bf67}{}\label{classConstraintPassingManager__PB_ab06613fe88e472ed575a09e32d60bf67}
+
+
+Processing\+\_\+block.\+cpp 파일의 228 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Processing__block_8cpp}{Processing\+\_\+block.\+cpp}\end{DoxyCompactItemize}

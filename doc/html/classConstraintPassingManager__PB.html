@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>RTOS Splash: ConstraintPassingManager_PB</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RTOS Splash
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="pages.html"><span>관련된&#160;페이지</span></a></li>
+      <li class="current"><a href="annotated.html"><span>클래스</span></a></li>
+      <li><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>클래스&#160;목록</span></a></li>
+      <li><a href="classes.html"><span>클래스&#160;색인</span></a></li>
+      <li><a href="inherits.html"><span>클래스&#160;계통도</span></a></li>
+      <li><a href="functions.html"><span>클래스&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classConstraintPassingManager__PB.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 멤버 함수</a> &#124;
+<a href="#pri-attribs">Private 속성</a> &#124;
+<a href="classConstraintPassingManager__PB-members.html">모든 멤버 목록</a>  </div>
+  <div class="headertitle">
+<div class="title">ConstraintPassingManager_PB</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Pass two time constriant variables from input messages to output messages.  
+ <a href="classConstraintPassingManager__PB.html#details">더 자세히 ...</a></p>
+<div class="dynheader">
+ConstraintPassingManager_PB에 대한 협력 다이어그램:</div>
+<div class="dyncontent">
+<div class="center"><img src="classConstraintPassingManager__PB__coll__graph.png" border="0" usemap="#ConstraintPassingManager__PB_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 멤버 함수</h2></td></tr>
+<tr class="memitem:a8da0b01c95f6eb6991ed763bc7151a0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#a8da0b01c95f6eb6991ed763bc7151a0f">setPortMappingFreshness</a> (int inputport_num, int outputport_num)</td></tr>
+<tr class="separator:a8da0b01c95f6eb6991ed763bc7151a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e635543ffe3a2cd25c26c348812d09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#a05e635543ffe3a2cd25c26c348812d09">setPortMappingFactoryDeadline</a> (int inputport_num, int outputport_num)</td></tr>
+<tr class="separator:a05e635543ffe3a2cd25c26c348812d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1569a1c4dc95157e77ac43eed44e28a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#ab1569a1c4dc95157e77ac43eed44e28a">saveFreshness</a> (int inputport_num, int64_t gentime)</td></tr>
+<tr class="separator:ab1569a1c4dc95157e77ac43eed44e28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9984e913275a946bf4c8fb772f49225"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#af9984e913275a946bf4c8fb772f49225">saveFactoryDeadline</a> (int inputport_num, int64_t duetime)</td></tr>
+<tr class="separator:af9984e913275a946bf4c8fb772f49225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea8253b7002edd6272ae4ee36617566"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#aaea8253b7002edd6272ae4ee36617566">loadFreshness</a> (int inputport_num)</td></tr>
+<tr class="separator:aaea8253b7002edd6272ae4ee36617566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10289fbb94c1b7d943e46ff814090805"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#a10289fbb94c1b7d943e46ff814090805">loadFactoryDeadline</a> (int inputport_num)</td></tr>
+<tr class="separator:a10289fbb94c1b7d943e46ff814090805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addd726c7327487a745c64086574c6888"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#addd726c7327487a745c64086574c6888">findInputPortFreshness</a> (int outputport_num)</td></tr>
+<tr class="separator:addd726c7327487a745c64086574c6888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf738795807249b71091a9155a2a838d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#aaf738795807249b71091a9155a2a838d">findInputPortFactoryDeadline</a> (int outputport_num)</td></tr>
+<tr class="separator:aaf738795807249b71091a9155a2a838d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac2cc79ac0b3f68d7a066bbae35486f"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#adac2cc79ac0b3f68d7a066bbae35486f">takeFreshness</a> (int outputport_num)</td></tr>
+<tr class="separator:adac2cc79ac0b3f68d7a066bbae35486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560d29d55761fbc597b6a694722ae665"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#a560d29d55761fbc597b6a694722ae665">takeFactoryDeadline</a> (int outputport_num)</td></tr>
+<tr class="separator:a560d29d55761fbc597b6a694722ae665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private 속성</h2></td></tr>
+<tr class="memitem:a34c12f7a79cb6c7a6c68bf63e17fed65"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#a34c12f7a79cb6c7a6c68bf63e17fed65">_freshness_port_mapping</a> [5]</td></tr>
+<tr class="separator:a34c12f7a79cb6c7a6c68bf63e17fed65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c7c8ece56f6b66647da4793fdbcdd5"><td class="memItemLeft" align="right" valign="top">std::bitset&lt; 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#ac9c7c8ece56f6b66647da4793fdbcdd5">_factory_deadline_port_mapping</a> [5]</td></tr>
+<tr class="separator:ac9c7c8ece56f6b66647da4793fdbcdd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06613fe88e472ed575a09e32d60bf67"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#ab06613fe88e472ed575a09e32d60bf67">_freshnesses</a> [5] = {-1, -1, -1, -1, -1}</td></tr>
+<tr class="separator:ab06613fe88e472ed575a09e32d60bf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7e67da1e921de5f66eb9bf676ea945"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintPassingManager__PB.html#a1a7e67da1e921de5f66eb9bf676ea945">_factory_deadlines</a> [5] = {-1, -1, -1, -1, -1}</td></tr>
+<tr class="separator:a1a7e67da1e921de5f66eb9bf676ea945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">상세한 설명</h2>
+<div class="textblock"><p>Pass two time constriant variables from input messages to output messages. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">할일:</a></b></dt><dd>modify every methods to correspond with new definition of message timestamp and deadline constraint </dd></dl>
+<dl class="section author"><dt>작성자</dt><dd>Beomjoon Yang </dd></dl>
+<dl class="section date"><dt>날짜</dt><dd>2018-10-26 </dd></dl>
+<dl class="section version"><dt>버전</dt><dd>0.0.1 </dd></dl>
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00200">200</a> 번째 라인에서 정의되었습니다.</p>
+</div><h2 class="groupheader">멤버 함수 문서화</h2>
+<a class="anchor" id="aaf738795807249b71091a9155a2a838d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConstraintPassingManager_PB::findInputPortFactoryDeadline </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outputport_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00281">281</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="addd726c7327487a745c64086574c6888"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConstraintPassingManager_PB::findInputPortFreshness </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outputport_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00272">272</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10289fbb94c1b7d943e46ff814090805"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ConstraintPassingManager_PB::loadFactoryDeadline </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inputport_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00264">264</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaea8253b7002edd6272ae4ee36617566"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ConstraintPassingManager_PB::loadFreshness </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inputport_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00260">260</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9984e913275a946bf4c8fb772f49225"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConstraintPassingManager_PB::saveFactoryDeadline </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inputport_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>duetime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00251">251</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1569a1c4dc95157e77ac43eed44e28a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConstraintPassingManager_PB::saveFreshness </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inputport_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>gentime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00246">246</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05e635543ffe3a2cd25c26c348812d09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConstraintPassingManager_PB::setPortMappingFactoryDeadline </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inputport_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outputport_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00238">238</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8da0b01c95f6eb6991ed763bc7151a0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConstraintPassingManager_PB::setPortMappingFreshness </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inputport_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outputport_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00234">234</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a560d29d55761fbc597b6a694722ae665"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ConstraintPassingManager_PB::takeFactoryDeadline </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outputport_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00305">305</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="adac2cc79ac0b3f68d7a066bbae35486f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ConstraintPassingManager_PB::takeFreshness </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outputport_num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00299">299</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<h2 class="groupheader">멤버 데이타 문서화</h2>
+<a class="anchor" id="ac9c7c8ece56f6b66647da4793fdbcdd5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;5&gt; ConstraintPassingManager_PB::_factory_deadline_port_mapping[5]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00225">225</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a7e67da1e921de5f66eb9bf676ea945"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ConstraintPassingManager_PB::_factory_deadlines[5] = {-1, -1, -1, -1, -1}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00229">229</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34c12f7a79cb6c7a6c68bf63e17fed65"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::bitset&lt;5&gt; ConstraintPassingManager_PB::_freshness_port_mapping[5]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00224">224</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab06613fe88e472ed575a09e32d60bf67"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t ConstraintPassingManager_PB::_freshnesses[5] = {-1, -1, -1, -1, -1}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a> 파일의 <a class="el" href="Processing__block_8cpp_source.html#l00228">228</a> 번째 라인에서 정의되었습니다.</p>
+
+</div>
+</div>
+<hr/>이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.:<ul>
+<li>src/<a class="el" href="Processing__block_8cpp_source.html">Processing_block.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classConstraintPassingManager__PB.html">ConstraintPassingManager_PB</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

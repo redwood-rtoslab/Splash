@@ -1,0 +1,91 @@
+\hypertarget{Processing__block_8cpp}{}\section{src/\+Processing\+\_\+block.cpp 파일 참조}
+\label{Processing__block_8cpp}\index{src/\+Processing\+\_\+block.\+cpp@{src/\+Processing\+\_\+block.\+cpp}}
+{\ttfamily \#include \char`\"{}../dependencies/data\+\_\+type\+\_\+files/default\+\_\+data\+\_\+\+D\+C\+P\+S.\+hpp\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$chrono$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$bitset$>$}\\*
+Processing\+\_\+block.\+cpp에 대한 include 의존 그래프\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Processing__block_8cpp__incl}
+\end{center}
+\end{figure}
+이 그래프는 이 파일을 직/간접적으로 include 하는 파일들을 보여줍니다.\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Processing__block_8cpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classInputDataPort__PB}{Input\+Data\+Port\+\_\+\+P\+B$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}
+\begin{DoxyCompactList}\small\item\em Splash l\+Lnguage\+Constructs $>$ Port\+Prototype $>$ Receive\+Interface $>$ Input\+Stream\+Port. \end{DoxyCompactList}\item 
+class \hyperlink{classOutputDataPort__PB}{Output\+Data\+Port\+\_\+\+P\+B$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}
+\begin{DoxyCompactList}\small\item\em Splash l\+Lnguage\+Constructs $>$ Port\+Prototype $>$ Receive\+Interface $>$ Output\+Stream\+Port. \end{DoxyCompactList}\item 
+class \hyperlink{classEventDataPort__PB}{Event\+Data\+Port\+\_\+\+P\+B$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}
+\item 
+class \hyperlink{classSystemClock}{System\+Clock}
+\begin{DoxyCompactList}\small\item\em Clock class of current system. \end{DoxyCompactList}\item 
+class \hyperlink{classFreshnessMonitor__IP}{Freshness\+Monitor\+\_\+\+IP}
+\begin{DoxyCompactList}\small\item\em Detect freshness constraint violation. \end{DoxyCompactList}\item 
+class \hyperlink{classDeadlineMonitor__PB}{Deadline\+Monitor\+\_\+\+PB}
+\begin{DoxyCompactList}\small\item\em Detect deadline constraint violation. \end{DoxyCompactList}\item 
+class \hyperlink{classConstraintPassingManager__PB}{Constraint\+Passing\+Manager\+\_\+\+PB}
+\begin{DoxyCompactList}\small\item\em Pass two time constriant variables from input messages to output messages. \end{DoxyCompactList}\item 
+class \hyperlink{classProcessingBlock}{Processing\+Block$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}
+\begin{DoxyCompactList}\small\item\em Splash Language\+Constructs $>$ Component\+Type $>$ Atomic\+Component\+Type $>$ Processing\+Block\+Type. \end{DoxyCompactList}\item 
+class \hyperlink{classSplashDataReaderListener}{Splash\+Data\+Reader\+Listener$<$ data\+\_\+t $>$}
+\item 
+class \hyperlink{classInputRateMonitor__PB}{Input\+Rate\+Monitor\+\_\+\+P\+B$<$ data\+\_\+t $>$}
+\begin{DoxyCompactList}\small\item\em detect input rate constriant violation \end{DoxyCompactList}\item 
+class \hyperlink{classInputDataPort__PB}{Input\+Data\+Port\+\_\+\+P\+B$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}
+\begin{DoxyCompactList}\small\item\em Splash l\+Lnguage\+Constructs $>$ Port\+Prototype $>$ Receive\+Interface $>$ Input\+Stream\+Port. \end{DoxyCompactList}\item 
+class \hyperlink{classOutputRateMonitor__PB}{Output\+Rate\+Monitor\+\_\+\+P\+B$<$ data\+\_\+t $>$}
+\begin{DoxyCompactList}\small\item\em detect output rate constriant violation \end{DoxyCompactList}\item 
+class \hyperlink{classOutputDataPort__PB}{Output\+Data\+Port\+\_\+\+P\+B$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}
+\begin{DoxyCompactList}\small\item\em Splash l\+Lnguage\+Constructs $>$ Port\+Prototype $>$ Receive\+Interface $>$ Output\+Stream\+Port. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{매크로}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Processing__block_8cpp_adb892fcffba82497f7c3176fc9a84d2b}{\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+B\+L\+O\+C\+K\+\_\+\+C\+P\+P\+\_\+}
+\item 
+\#define \hyperlink{Processing__block_8cpp_a8de3ed741dadc9c979a4ff17c0a9116e}{N\+D\+E\+B\+UG}
+\item 
+\#define \hyperlink{Processing__block_8cpp_a6efce31231bd5f771218e2ad51daece4}{dp}(fmt,  args...)
+\end{DoxyCompactItemize}
+
+
+\subsection{매크로 문서화}
+\index{Processing\+\_\+block.\+cpp@{Processing\+\_\+block.\+cpp}!\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+B\+L\+O\+C\+K\+\_\+\+C\+P\+P\+\_\+@{\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+B\+L\+O\+C\+K\+\_\+\+C\+P\+P\+\_\+}}
+\index{\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+B\+L\+O\+C\+K\+\_\+\+C\+P\+P\+\_\+@{\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+B\+L\+O\+C\+K\+\_\+\+C\+P\+P\+\_\+}!Processing\+\_\+block.\+cpp@{Processing\+\_\+block.\+cpp}}
+\subsubsection[{\texorpdfstring{\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+B\+L\+O\+C\+K\+\_\+\+C\+P\+P\+\_\+}{_PROCESSING_BLOCK_CPP_}}]{\setlength{\rightskip}{0pt plus 5cm}\#define \+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+N\+G\+\_\+\+B\+L\+O\+C\+K\+\_\+\+C\+P\+P\+\_\+}\hypertarget{Processing__block_8cpp_adb892fcffba82497f7c3176fc9a84d2b}{}\label{Processing__block_8cpp_adb892fcffba82497f7c3176fc9a84d2b}
+
+
+Processing\+\_\+block.\+cpp 파일의 2 번째 라인에서 정의되었습니다.
+
+\index{Processing\+\_\+block.\+cpp@{Processing\+\_\+block.\+cpp}!dp@{dp}}
+\index{dp@{dp}!Processing\+\_\+block.\+cpp@{Processing\+\_\+block.\+cpp}}
+\subsubsection[{\texorpdfstring{dp}{dp}}]{\setlength{\rightskip}{0pt plus 5cm}\#define dp(
+\begin{DoxyParamCaption}
+\item[{}]{fmt, }
+\item[{}]{args...}
+\end{DoxyParamCaption}
+)}\hypertarget{Processing__block_8cpp_a6efce31231bd5f771218e2ad51daece4}{}\label{Processing__block_8cpp_a6efce31231bd5f771218e2ad51daece4}
+
+
+Processing\+\_\+block.\+cpp 파일의 9 번째 라인에서 정의되었습니다.
+
+\index{Processing\+\_\+block.\+cpp@{Processing\+\_\+block.\+cpp}!N\+D\+E\+B\+UG@{N\+D\+E\+B\+UG}}
+\index{N\+D\+E\+B\+UG@{N\+D\+E\+B\+UG}!Processing\+\_\+block.\+cpp@{Processing\+\_\+block.\+cpp}}
+\subsubsection[{\texorpdfstring{N\+D\+E\+B\+UG}{NDEBUG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\+D\+E\+B\+UG}\hypertarget{Processing__block_8cpp_a8de3ed741dadc9c979a4ff17c0a9116e}{}\label{Processing__block_8cpp_a8de3ed741dadc9c979a4ff17c0a9116e}
+
+
+Processing\+\_\+block.\+cpp 파일의 4 번째 라인에서 정의되었습니다.
+

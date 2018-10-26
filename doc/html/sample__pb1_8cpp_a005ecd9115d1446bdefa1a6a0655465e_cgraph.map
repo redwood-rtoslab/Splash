@@ -1,0 +1,4 @@
+<map id="pb_1_freshness_handler" name="pb_1_freshness_handler">
+<area shape="rect" id="node2" href="$classSystemClock.html#ac51adb5878772576050a1c70b8994244" title="SystemClock::getCurrentTime" alt="" coords="216,5,415,32"/>
+<area shape="rect" id="node3" href="$classProcessingBlock.html#a36e353e417f3fe482492f6166c504a71" title="ProcessingBlock::spin" alt="" coords="239,56,391,83"/>
+</map>

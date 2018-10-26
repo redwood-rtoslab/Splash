@@ -1,0 +1,4 @@
+<map id="FreshnessMonitor_IP::setup" name="FreshnessMonitor_IP::setup">
+<area shape="rect" id="node2" href="$classInputDataPort__Fac.html#a57bb915c4c801305df78d70e3bcb8d5e" title="InputDataPort_Fac::\lsetFreshness" alt="" coords="237,5,377,47"/>
+<area shape="rect" id="node3" href="$classInputDataPort__PB.html#afc60b73a230f505302984dd8421db791" title="InputDataPort_PB::setFreshness" alt="" coords="200,71,415,98"/>
+</map>

@@ -1,0 +1,15 @@
+module path_CU
+{
+	struct Msg
+	{
+		long id;
+		double steering_input;
+
+	};
+	#pragma keylist Msg id
+
+
+};
+
+
+

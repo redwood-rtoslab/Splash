@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<splash:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:splash="http://www.example.org/splash">
+  <factory name="ACC_LKAS">
+    <processing_block name="Lat. DistanceErr. Input">
+      <outputdataport target_pipe="//@factory/@pipe.4"/>
+    </processing_block>
+    <processing_block name="LKAS">
+      <inputdataport source_pipe="//@factory/@pipe.4"/>
+      <outputdataport target_pipe="//@factory/@pipe.5 //@factory/@pipe.6"/>
+    </processing_block>
+    <processing_block name="LKAS Output Eth">
+      <inputdataport source_pipe="//@factory/@pipe.5"/>
+    </processing_block>
+    <processing_block name="LKAS Output CAN">
+      <inputdataport source_pipe="//@factory/@pipe.6"/>
+    </processing_block>
+    <processing_block name="Gear Input">
+      <outputdataport target_pipe="//@factory/@pipe.0"/>
+    </processing_block>
+    <processing_block name="Cur. Speed Input">
+      <outputdataport target_pipe="//@factory/@pipe.1"/>
+    </processing_block>
+    <processing_block name="ACC">
+      <inputdataport source_pipe="//@factory/@pipe.0"/>
+      <inputdataport source_pipe="//@factory/@pipe.1"/>
+      <outputdataport target_pipe="//@factory/@pipe.2"/>
+      <outputdataport target_pipe="//@factory/@pipe.3"/>
+    </processing_block>
+    <processing_block name="ACC Output1">
+      <inputdataport source_pipe="//@factory/@pipe.2"/>
+    </processing_block>
+    <processing_block name="ACC Output2">
+      <inputdataport source_pipe="//@factory/@pipe.3"/>
+    </processing_block>
+    <pipe source_port="//@factory/@processing_block.4/@outputdataport.0" target_port="//@factory/@processing_block.6/@inputdataport.0"/>
+    <pipe source_port="//@factory/@processing_block.5/@outputdataport.0" target_port="//@factory/@processing_block.6/@inputdataport.1"/>
+    <pipe source_port="//@factory/@processing_block.6/@outputdataport.0" target_port="//@factory/@processing_block.7/@inputdataport.0"/>
+    <pipe source_port="//@factory/@processing_block.6/@outputdataport.1" target_port="//@factory/@processing_block.8/@inputdataport.0"/>
+    <pipe source_port="//@factory/@processing_block.0/@outputdataport.0" target_port="//@factory/@processing_block.1/@inputdataport.0"/>
+    <pipe source_port="//@factory/@processing_block.1/@outputdataport.0" target_port="//@factory/@processing_block.2/@inputdataport.0"/>
+    <pipe source_port="//@factory/@processing_block.1/@outputdataport.0" target_port="//@factory/@processing_block.3/@inputdataport.0"/>
+    <factoryid ID="2"/>
+  </factory>
+</splash:System>

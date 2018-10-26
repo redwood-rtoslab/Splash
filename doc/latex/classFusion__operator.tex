@@ -1,0 +1,794 @@
+\hypertarget{classFusion__operator}{}\section{Fusion\+\_\+operator$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}
+\label{classFusion__operator}\index{Fusion\+\_\+operator$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$@{Fusion\+\_\+operator$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}}
+
+
+Fusion\+\_\+operator$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$에 대한 협력 다이어그램\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classFusion__operator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classFusion__operator_a9336f2c0bf50620148cdd404cc139843}{write} (Data\+\_\+9)
+\item 
+int \hyperlink{classFusion__operator_a132cd952907c90ae57ede626900d42c1}{setmand} (std\+::bitset$<$ 9 $>$ $\ast$)
+\item 
+void \hyperlink{classFusion__operator_adc41869c62a2702bcdf55c124cbf279c}{fusion\+\_\+ready} ()
+\item 
+void \hyperlink{classFusion__operator_a3f543c87eea905946c33e1a00bcc4e0b}{fuse} ()
+\item 
+void \hyperlink{classFusion__operator_a6e5a527e137d815675137e195a81bc8c}{initialize} (std\+::string name, double correlation, int opt\+\_\+count, int core\+\_\+id)
+\end{DoxyCompactItemize}
+\subsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+std\+::bitset$<$ 9 $>$ \hyperlink{classFusion__operator_a1b0feb66d902358293e42a9cea02b5f7}{mandport}
+\item 
+std\+::bitset$<$ 10 $>$ \hyperlink{classFusion__operator_a5d5904ab66f3b43ed107a5b3ef9d205b}{connected\+\_\+ports}
+\item 
+std\+::bitset$<$ 9 $>$ \hyperlink{classFusion__operator_a29bdb5e13d8f8adf00ffcfcbca60fcf4}{taken\+\_\+ports}
+\item 
+dds\+::domain\+::\+Domain\+Participant \hyperlink{classFusion__operator_ad3b3aafd9ed9aa55eb097656a97551bd}{default\+\_\+dp} \{org\+::opensplice\+::domain\+::default\+\_\+id()\}
+\item 
+dds\+::pub\+::\+Publisher \hyperlink{classFusion__operator_a121024c841142a5b50be10b19e94653e}{P\+B\+\_\+pub} \{\hyperlink{classFusion__operator_ad3b3aafd9ed9aa55eb097656a97551bd}{default\+\_\+dp}, default\+\_\+dp.\+default\+\_\+publisher\+\_\+qos()\}
+\item 
+dds\+::sub\+::\+Subscriber \hyperlink{classFusion__operator_aa22d9bbeb385dc5b1e31d85d65d63f28}{P\+B\+\_\+sub} \{\hyperlink{classFusion__operator_ad3b3aafd9ed9aa55eb097656a97551bd}{default\+\_\+dp}, default\+\_\+dp.\+default\+\_\+subscriber\+\_\+qos()\}
+\item 
+dds\+::topic\+::\+Topic$<$ Data\+\_\+0 $>$ $\ast$ \hyperlink{classFusion__operator_a378e811778586da6619a1d6c2d1c5f37}{topic0}
+\item 
+dds\+::topic\+::\+Topic$<$ Data\+\_\+1 $>$ $\ast$ \hyperlink{classFusion__operator_a79543a848dd9ac2cb01f9e38acf2b988}{topic1}
+\item 
+dds\+::topic\+::\+Topic$<$ Data\+\_\+2 $>$ $\ast$ \hyperlink{classFusion__operator_a156ba17873325c431689c47f2f2d6296}{topic2}
+\item 
+dds\+::topic\+::\+Topic$<$ Data\+\_\+3 $>$ $\ast$ \hyperlink{classFusion__operator_af90486f24e7f5e82364b20ad9d448595}{topic3}
+\item 
+dds\+::topic\+::\+Topic$<$ Data\+\_\+4 $>$ $\ast$ \hyperlink{classFusion__operator_a2436ee57380c11e74b971df67d23c06a}{topic4}
+\item 
+dds\+::topic\+::\+Topic$<$ Data\+\_\+5 $>$ $\ast$ \hyperlink{classFusion__operator_a610b159b6f22ca65f11d2db2c1b2124b}{topic5}
+\item 
+dds\+::topic\+::\+Topic$<$ Data\+\_\+6 $>$ $\ast$ \hyperlink{classFusion__operator_a747b20c14e1a835bb763694a1368d857}{topic6}
+\item 
+dds\+::topic\+::\+Topic$<$ Data\+\_\+7 $>$ $\ast$ \hyperlink{classFusion__operator_abeb8122aebb4d834cb3433aaa99365dd}{topic7}
+\item 
+dds\+::topic\+::\+Topic$<$ Data\+\_\+8 $>$ $\ast$ \hyperlink{classFusion__operator_ab050a3199eb223c53a60087961d0e0cc}{topic8}
+\item 
+dds\+::topic\+::\+Topic$<$ Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_afb0a94863c813bbc7fc2a52838301937}{topic9}
+\item 
+dds\+::topic\+::\+Topic$<$ int $>$ $\ast$ \hyperlink{classFusion__operator_ab2ba1dc33bae5f39ecabd4018bedf47f}{topic\+\_\+event}
+\item 
+dds\+::core\+::cond\+::\+Wait\+Set \hyperlink{classFusion__operator_a15a7b6ccddbe0b8ad3bd8932a38c6db2}{ws\+\_\+0}
+\item 
+dds\+::core\+::cond\+::\+Wait\+Set \hyperlink{classFusion__operator_a6ca4a3185f87b382542eaf241eab3e52}{ws\+\_\+1}
+\item 
+dds\+::core\+::cond\+::\+Wait\+Set \hyperlink{classFusion__operator_af231872d2c22b353710ee90b6a2be4bf}{ws\+\_\+2}
+\item 
+dds\+::core\+::cond\+::\+Wait\+Set \hyperlink{classFusion__operator_a31133e7918c57cbca7cc42f141ff672d}{ws\+\_\+3}
+\item 
+dds\+::core\+::cond\+::\+Wait\+Set \hyperlink{classFusion__operator_a5dea84d5320494140d650bc0823d56f2}{ws\+\_\+4}
+\item 
+dds\+::core\+::cond\+::\+Wait\+Set \hyperlink{classFusion__operator_ac2bc73cfd2d097373d0716e61c843a33}{ws\+\_\+5}
+\item 
+dds\+::core\+::cond\+::\+Wait\+Set \hyperlink{classFusion__operator_a32e2694d512a9ba74b13a0b07f8f4649}{ws\+\_\+6}
+\item 
+dds\+::core\+::cond\+::\+Wait\+Set \hyperlink{classFusion__operator_a0c468d5a6c0fb3b6adf93372ca678c65}{ws\+\_\+7}
+\item 
+dds\+::core\+::cond\+::\+Wait\+Set \hyperlink{classFusion__operator_a07930a190539ebefac664cc34d81dbe8}{ws\+\_\+8}
+\item 
+\hyperlink{classInputDataPort__F}{Input\+Data\+Port\+\_\+F}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_a7bcb3db4950e0de858fcd1e481e987d9}{I\+D\+P0}
+\item 
+\hyperlink{classInputDataPort__F}{Input\+Data\+Port\+\_\+F}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_a758f7524bb515cb07df2cbac6b06cef4}{I\+D\+P1}
+\item 
+\hyperlink{classInputDataPort__F}{Input\+Data\+Port\+\_\+F}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_a1c237055f4af1bfed7d18f0f1620b5dc}{I\+D\+P2}
+\item 
+\hyperlink{classInputDataPort__F}{Input\+Data\+Port\+\_\+F}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_ae053a7964cd7ba4422303dddda22bb8c}{I\+D\+P3}
+\item 
+\hyperlink{classInputDataPort__F}{Input\+Data\+Port\+\_\+F}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_a087dec92bca6e8c5c9f3a8c033db66c2}{I\+D\+P4}
+\item 
+\hyperlink{classInputDataPort__F}{Input\+Data\+Port\+\_\+F}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_ae1ea70ef80557cc22efefb7cb5bae955}{I\+D\+P5}
+\item 
+\hyperlink{classInputDataPort__F}{Input\+Data\+Port\+\_\+F}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_a380165fcccb240f43de928c329b93ddf}{I\+D\+P6}
+\item 
+\hyperlink{classInputDataPort__F}{Input\+Data\+Port\+\_\+F}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_a03fa8722d419112cc6f9d21354453985}{I\+D\+P7}
+\item 
+\hyperlink{classInputDataPort__F}{Input\+Data\+Port\+\_\+F}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_afdf3f278a54f1dfeb655889ab7ec9ce7}{I\+D\+P8}
+\item 
+\hyperlink{classOutputDataPort__F}{Output\+Data\+Port\+\_\+F}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$ $\ast$ \hyperlink{classFusion__operator_a3afeb436d521b3c232ac41e26193ef3b}{O\+DP}
+\item 
+dds\+::sub\+::\+Sample$<$ Data\+\_\+0 $>$ \hyperlink{classFusion__operator_accd0def1ab312df9918676814257da82}{fusion\+\_\+data1}
+\item 
+dds\+::sub\+::\+Sample$<$ Data\+\_\+1 $>$ \hyperlink{classFusion__operator_a8c545bb751bfdda39be20b56b4aa7cbc}{fusion\+\_\+data2}
+\item 
+dds\+::sub\+::\+Sample$<$ Data\+\_\+2 $>$ \hyperlink{classFusion__operator_a983008a895d0902a9aafc471af7681a5}{fusion\+\_\+data3}
+\item 
+dds\+::sub\+::\+Sample$<$ Data\+\_\+3 $>$ \hyperlink{classFusion__operator_a40f85d88738eca58c412f0b70792678f}{fusion\+\_\+data4}
+\item 
+dds\+::sub\+::\+Sample$<$ Data\+\_\+4 $>$ \hyperlink{classFusion__operator_a770f79170f64f611facd933ebb1c9b58}{fusion\+\_\+data5}
+\item 
+dds\+::sub\+::\+Sample$<$ Data\+\_\+5 $>$ \hyperlink{classFusion__operator_ab60db5c3be3d0512a35c4231616383c4}{fusion\+\_\+data6}
+\item 
+dds\+::sub\+::\+Sample$<$ Data\+\_\+6 $>$ \hyperlink{classFusion__operator_a12845b96c8a2a00cbf7290462e2fa215}{fusion\+\_\+data7}
+\item 
+dds\+::sub\+::\+Sample$<$ Data\+\_\+7 $>$ \hyperlink{classFusion__operator_ac3ddeea7acd61121e02501cbffc2b7be}{fusion\+\_\+data8}
+\item 
+dds\+::sub\+::\+Sample$<$ Data\+\_\+8 $>$ \hyperlink{classFusion__operator_af352606f5dcf540b5e9beb72870c9fa6}{fusion\+\_\+data9}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+0 $>$ $>$ \hyperlink{classFusion__operator_ab24eda6a56115e1eb0ab2c89a2632436}{sample\+\_\+0} \{1\}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+0 $>$ $>$\+::iterator \hyperlink{classFusion__operator_ab0adcc22beac8918ea3e22b04f1d31d3}{iter\+\_\+0}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+1 $>$ $>$ \hyperlink{classFusion__operator_afe367eeae918067d7d26c90bc0be202d}{sample\+\_\+1} \{1\}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+1 $>$ $>$\+::iterator \hyperlink{classFusion__operator_a4d552a9a1ab0911598232059cb0937bc}{iter\+\_\+1}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+2 $>$ $>$ \hyperlink{classFusion__operator_a1a65f84d529180cd77defee525bc7bd6}{sample\+\_\+2} \{1\}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+2 $>$ $>$\+::iterator \hyperlink{classFusion__operator_a4fd31cb3bea3e7362643729b4bdcb3f1}{iter\+\_\+2}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+3 $>$ $>$ \hyperlink{classFusion__operator_a1954d8d67f9a34d47e5b59cc65d09252}{sample\+\_\+3} \{1\}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+3 $>$ $>$\+::iterator \hyperlink{classFusion__operator_a15048a8432350604c31fbbd6945d4692}{iter\+\_\+3}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+4 $>$ $>$ \hyperlink{classFusion__operator_a56bb3464ca6d140acdf3560bb94a401b}{sample\+\_\+4} \{1\}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+4 $>$ $>$\+::iterator \hyperlink{classFusion__operator_a98de1068d698554103ec8b77a012df5b}{iter\+\_\+4}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+5 $>$ $>$ \hyperlink{classFusion__operator_a5623c0acc7a90d21a50ac010a5f1daf5}{sample\+\_\+5} \{1\}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+5 $>$ $>$\+::iterator \hyperlink{classFusion__operator_a323bf6a71abd728d9ef6daa5ed1b1ab2}{iter\+\_\+5}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+6 $>$ $>$ \hyperlink{classFusion__operator_a0051d8d0ba3e16b797e38412e44f46ef}{sample\+\_\+6} \{1\}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+6 $>$ $>$\+::iterator \hyperlink{classFusion__operator_a38913c414f92a70db936c629ddfb4fb0}{iter\+\_\+6}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+7 $>$ $>$ \hyperlink{classFusion__operator_ac206ae8fc1c89e2ca114bb80a5899bcd}{sample\+\_\+7} \{1\}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+7 $>$ $>$\+::iterator \hyperlink{classFusion__operator_a010f79ae83cd86608e81475c4b021104}{iter\+\_\+7}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+8 $>$ $>$ \hyperlink{classFusion__operator_ad74fbf7634ca557dc8e590487b21b283}{sample\+\_\+8} \{1\}
+\item 
+std\+::vector$<$ dds\+::sub\+::\+Sample$<$ Data\+\_\+8 $>$ $>$\+::iterator \hyperlink{classFusion__operator_a472aa52f1d6fb1646283d5d955a13ae1}{iter\+\_\+8}
+\end{DoxyCompactItemize}
+
+
+\subsection{상세한 설명}
+\subsubsection*{template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$\\*
+class Fusion\+\_\+operator$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$}
+
+
+
+Fusion\+\_\+operator.\+cpp 파일의 49 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{멤버 함수 문서화}
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fuse@{fuse}}
+\index{fuse@{fuse}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fuse()}{fuse()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ void {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fuse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFusion__operator_a3f543c87eea905946c33e1a00bcc4e0b}{}\label{classFusion__operator_a3f543c87eea905946c33e1a00bcc4e0b}
+
+
+sample\+\_\+main\+\_\+2.\+cpp 파일의 36 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fusion\+\_\+ready@{fusion\+\_\+ready}}
+\index{fusion\+\_\+ready@{fusion\+\_\+ready}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+ready()}{fusion_ready()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ void {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fusion\+\_\+ready (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFusion__operator_adc41869c62a2702bcdf55c124cbf279c}{}\label{classFusion__operator_adc41869c62a2702bcdf55c124cbf279c}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 551 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!initialize@{initialize}}
+\index{initialize@{initialize}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{initialize(std\+::string name, double correlation, int opt\+\_\+count, int core\+\_\+id)}{initialize(std::string name, double correlation, int opt_count, int core_id)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ void {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::initialize (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{double}]{correlation, }
+\item[{int}]{opt\+\_\+count, }
+\item[{int}]{core\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{classFusion__operator_a6e5a527e137d815675137e195a81bc8c}{}\label{classFusion__operator_a6e5a527e137d815675137e195a81bc8c}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 743 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!setmand@{setmand}}
+\index{setmand@{setmand}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{setmand(std\+::bitset$<$ 9 $>$ $\ast$)}{setmand(std::bitset< 9 > *)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ int {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::setmand (
+\begin{DoxyParamCaption}
+\item[{std\+::bitset$<$ 9 $>$ $\ast$}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFusion__operator_a132cd952907c90ae57ede626900d42c1}{}\label{classFusion__operator_a132cd952907c90ae57ede626900d42c1}
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!write@{write}}
+\index{write@{write}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{write(\+Data\+\_\+9)}{write(Data_9)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0 , typename Data\+\_\+1 , typename Data\+\_\+2 , typename Data\+\_\+3 , typename Data\+\_\+4 , typename Data\+\_\+5 , typename Data\+\_\+6 , typename Data\+\_\+7 , typename Data\+\_\+8 , typename Data\+\_\+9 $>$ int {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::write (
+\begin{DoxyParamCaption}
+\item[{Data\+\_\+9}]{Data}
+\end{DoxyParamCaption}
+)}\hypertarget{classFusion__operator_a9336f2c0bf50620148cdd404cc139843}{}\label{classFusion__operator_a9336f2c0bf50620148cdd404cc139843}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 539 번째 라인에서 정의되었습니다.
+
+
+
+\subsection{멤버 데이타 문서화}
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!connected\+\_\+ports@{connected\+\_\+ports}}
+\index{connected\+\_\+ports@{connected\+\_\+ports}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{connected\+\_\+ports}{connected_ports}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::bitset$<$10$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::connected\+\_\+ports}\hypertarget{classFusion__operator_a5d5904ab66f3b43ed107a5b3ef9d205b}{}\label{classFusion__operator_a5d5904ab66f3b43ed107a5b3ef9d205b}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 55 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach(), Output\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!default\+\_\+dp@{default\+\_\+dp}}
+\index{default\+\_\+dp@{default\+\_\+dp}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{default\+\_\+dp}{default_dp}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::domain\+::\+Domain\+Participant {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::default\+\_\+dp \{org\+::opensplice\+::domain\+::default\+\_\+id()\}}\hypertarget{classFusion__operator_ad3b3aafd9ed9aa55eb097656a97551bd}{}\label{classFusion__operator_ad3b3aafd9ed9aa55eb097656a97551bd}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 58 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fusion\+\_\+data1@{fusion\+\_\+data1}}
+\index{fusion\+\_\+data1@{fusion\+\_\+data1}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+data1}{fusion_data1}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::sub\+::\+Sample$<$Data\+\_\+0$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fusion\+\_\+data1}\hypertarget{classFusion__operator_accd0def1ab312df9918676814257da82}{}\label{classFusion__operator_accd0def1ab312df9918676814257da82}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 148 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fusion\+\_\+data2@{fusion\+\_\+data2}}
+\index{fusion\+\_\+data2@{fusion\+\_\+data2}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+data2}{fusion_data2}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::sub\+::\+Sample$<$Data\+\_\+1$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fusion\+\_\+data2}\hypertarget{classFusion__operator_a8c545bb751bfdda39be20b56b4aa7cbc}{}\label{classFusion__operator_a8c545bb751bfdda39be20b56b4aa7cbc}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 149 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fusion\+\_\+data3@{fusion\+\_\+data3}}
+\index{fusion\+\_\+data3@{fusion\+\_\+data3}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+data3}{fusion_data3}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::sub\+::\+Sample$<$Data\+\_\+2$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fusion\+\_\+data3}\hypertarget{classFusion__operator_a983008a895d0902a9aafc471af7681a5}{}\label{classFusion__operator_a983008a895d0902a9aafc471af7681a5}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 150 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fusion\+\_\+data4@{fusion\+\_\+data4}}
+\index{fusion\+\_\+data4@{fusion\+\_\+data4}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+data4}{fusion_data4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::sub\+::\+Sample$<$Data\+\_\+3$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fusion\+\_\+data4}\hypertarget{classFusion__operator_a40f85d88738eca58c412f0b70792678f}{}\label{classFusion__operator_a40f85d88738eca58c412f0b70792678f}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 151 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fusion\+\_\+data5@{fusion\+\_\+data5}}
+\index{fusion\+\_\+data5@{fusion\+\_\+data5}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+data5}{fusion_data5}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::sub\+::\+Sample$<$Data\+\_\+4$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fusion\+\_\+data5}\hypertarget{classFusion__operator_a770f79170f64f611facd933ebb1c9b58}{}\label{classFusion__operator_a770f79170f64f611facd933ebb1c9b58}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 152 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fusion\+\_\+data6@{fusion\+\_\+data6}}
+\index{fusion\+\_\+data6@{fusion\+\_\+data6}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+data6}{fusion_data6}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::sub\+::\+Sample$<$Data\+\_\+5$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fusion\+\_\+data6}\hypertarget{classFusion__operator_ab60db5c3be3d0512a35c4231616383c4}{}\label{classFusion__operator_ab60db5c3be3d0512a35c4231616383c4}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 153 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fusion\+\_\+data7@{fusion\+\_\+data7}}
+\index{fusion\+\_\+data7@{fusion\+\_\+data7}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+data7}{fusion_data7}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::sub\+::\+Sample$<$Data\+\_\+6$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fusion\+\_\+data7}\hypertarget{classFusion__operator_a12845b96c8a2a00cbf7290462e2fa215}{}\label{classFusion__operator_a12845b96c8a2a00cbf7290462e2fa215}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 154 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fusion\+\_\+data8@{fusion\+\_\+data8}}
+\index{fusion\+\_\+data8@{fusion\+\_\+data8}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+data8}{fusion_data8}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::sub\+::\+Sample$<$Data\+\_\+7$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fusion\+\_\+data8}\hypertarget{classFusion__operator_ac3ddeea7acd61121e02501cbffc2b7be}{}\label{classFusion__operator_ac3ddeea7acd61121e02501cbffc2b7be}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 155 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!fusion\+\_\+data9@{fusion\+\_\+data9}}
+\index{fusion\+\_\+data9@{fusion\+\_\+data9}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{fusion\+\_\+data9}{fusion_data9}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::sub\+::\+Sample$<$Data\+\_\+8$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::fusion\+\_\+data9}\hypertarget{classFusion__operator_af352606f5dcf540b5e9beb72870c9fa6}{}\label{classFusion__operator_af352606f5dcf540b5e9beb72870c9fa6}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 156 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!I\+D\+P0@{I\+D\+P0}}
+\index{I\+D\+P0@{I\+D\+P0}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{I\+D\+P0}{IDP0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ {\bf Input\+Data\+Port\+\_\+F}$<$Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::I\+D\+P0}\hypertarget{classFusion__operator_a7bcb3db4950e0de858fcd1e481e987d9}{}\label{classFusion__operator_a7bcb3db4950e0de858fcd1e481e987d9}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 90 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!I\+D\+P1@{I\+D\+P1}}
+\index{I\+D\+P1@{I\+D\+P1}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{I\+D\+P1}{IDP1}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ {\bf Input\+Data\+Port\+\_\+F}$<$Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::I\+D\+P1}\hypertarget{classFusion__operator_a758f7524bb515cb07df2cbac6b06cef4}{}\label{classFusion__operator_a758f7524bb515cb07df2cbac6b06cef4}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 96 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!I\+D\+P2@{I\+D\+P2}}
+\index{I\+D\+P2@{I\+D\+P2}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{I\+D\+P2}{IDP2}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ {\bf Input\+Data\+Port\+\_\+F}$<$Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::I\+D\+P2}\hypertarget{classFusion__operator_a1c237055f4af1bfed7d18f0f1620b5dc}{}\label{classFusion__operator_a1c237055f4af1bfed7d18f0f1620b5dc}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 102 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!I\+D\+P3@{I\+D\+P3}}
+\index{I\+D\+P3@{I\+D\+P3}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{I\+D\+P3}{IDP3}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ {\bf Input\+Data\+Port\+\_\+F}$<$Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::I\+D\+P3}\hypertarget{classFusion__operator_ae053a7964cd7ba4422303dddda22bb8c}{}\label{classFusion__operator_ae053a7964cd7ba4422303dddda22bb8c}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 108 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!I\+D\+P4@{I\+D\+P4}}
+\index{I\+D\+P4@{I\+D\+P4}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{I\+D\+P4}{IDP4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ {\bf Input\+Data\+Port\+\_\+F}$<$Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::I\+D\+P4}\hypertarget{classFusion__operator_a087dec92bca6e8c5c9f3a8c033db66c2}{}\label{classFusion__operator_a087dec92bca6e8c5c9f3a8c033db66c2}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 114 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!I\+D\+P5@{I\+D\+P5}}
+\index{I\+D\+P5@{I\+D\+P5}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{I\+D\+P5}{IDP5}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ {\bf Input\+Data\+Port\+\_\+F}$<$Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::I\+D\+P5}\hypertarget{classFusion__operator_ae1ea70ef80557cc22efefb7cb5bae955}{}\label{classFusion__operator_ae1ea70ef80557cc22efefb7cb5bae955}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 120 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!I\+D\+P6@{I\+D\+P6}}
+\index{I\+D\+P6@{I\+D\+P6}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{I\+D\+P6}{IDP6}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ {\bf Input\+Data\+Port\+\_\+F}$<$Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::I\+D\+P6}\hypertarget{classFusion__operator_a380165fcccb240f43de928c329b93ddf}{}\label{classFusion__operator_a380165fcccb240f43de928c329b93ddf}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 126 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!I\+D\+P7@{I\+D\+P7}}
+\index{I\+D\+P7@{I\+D\+P7}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{I\+D\+P7}{IDP7}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ {\bf Input\+Data\+Port\+\_\+F}$<$Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::I\+D\+P7}\hypertarget{classFusion__operator_a03fa8722d419112cc6f9d21354453985}{}\label{classFusion__operator_a03fa8722d419112cc6f9d21354453985}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 132 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!I\+D\+P8@{I\+D\+P8}}
+\index{I\+D\+P8@{I\+D\+P8}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{I\+D\+P8}{IDP8}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ {\bf Input\+Data\+Port\+\_\+F}$<$Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::I\+D\+P8}\hypertarget{classFusion__operator_afdf3f278a54f1dfeb655889ab7ec9ce7}{}\label{classFusion__operator_afdf3f278a54f1dfeb655889ab7ec9ce7}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 138 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!iter\+\_\+0@{iter\+\_\+0}}
+\index{iter\+\_\+0@{iter\+\_\+0}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{iter\+\_\+0}{iter_0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+0$>$ $>$\+::iterator {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::iter\+\_\+0}\hypertarget{classFusion__operator_ab0adcc22beac8918ea3e22b04f1d31d3}{}\label{classFusion__operator_ab0adcc22beac8918ea3e22b04f1d31d3}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 161 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!iter\+\_\+1@{iter\+\_\+1}}
+\index{iter\+\_\+1@{iter\+\_\+1}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{iter\+\_\+1}{iter_1}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+1$>$ $>$\+::iterator {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::iter\+\_\+1}\hypertarget{classFusion__operator_a4d552a9a1ab0911598232059cb0937bc}{}\label{classFusion__operator_a4d552a9a1ab0911598232059cb0937bc}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 163 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!iter\+\_\+2@{iter\+\_\+2}}
+\index{iter\+\_\+2@{iter\+\_\+2}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{iter\+\_\+2}{iter_2}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+2$>$ $>$\+::iterator {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::iter\+\_\+2}\hypertarget{classFusion__operator_a4fd31cb3bea3e7362643729b4bdcb3f1}{}\label{classFusion__operator_a4fd31cb3bea3e7362643729b4bdcb3f1}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 165 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!iter\+\_\+3@{iter\+\_\+3}}
+\index{iter\+\_\+3@{iter\+\_\+3}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{iter\+\_\+3}{iter_3}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+3$>$ $>$\+::iterator {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::iter\+\_\+3}\hypertarget{classFusion__operator_a15048a8432350604c31fbbd6945d4692}{}\label{classFusion__operator_a15048a8432350604c31fbbd6945d4692}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 167 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!iter\+\_\+4@{iter\+\_\+4}}
+\index{iter\+\_\+4@{iter\+\_\+4}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{iter\+\_\+4}{iter_4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+4$>$ $>$\+::iterator {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::iter\+\_\+4}\hypertarget{classFusion__operator_a98de1068d698554103ec8b77a012df5b}{}\label{classFusion__operator_a98de1068d698554103ec8b77a012df5b}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 169 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!iter\+\_\+5@{iter\+\_\+5}}
+\index{iter\+\_\+5@{iter\+\_\+5}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{iter\+\_\+5}{iter_5}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+5$>$ $>$\+::iterator {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::iter\+\_\+5}\hypertarget{classFusion__operator_a323bf6a71abd728d9ef6daa5ed1b1ab2}{}\label{classFusion__operator_a323bf6a71abd728d9ef6daa5ed1b1ab2}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 171 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!iter\+\_\+6@{iter\+\_\+6}}
+\index{iter\+\_\+6@{iter\+\_\+6}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{iter\+\_\+6}{iter_6}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+6$>$ $>$\+::iterator {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::iter\+\_\+6}\hypertarget{classFusion__operator_a38913c414f92a70db936c629ddfb4fb0}{}\label{classFusion__operator_a38913c414f92a70db936c629ddfb4fb0}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 173 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!iter\+\_\+7@{iter\+\_\+7}}
+\index{iter\+\_\+7@{iter\+\_\+7}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{iter\+\_\+7}{iter_7}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+7$>$ $>$\+::iterator {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::iter\+\_\+7}\hypertarget{classFusion__operator_a010f79ae83cd86608e81475c4b021104}{}\label{classFusion__operator_a010f79ae83cd86608e81475c4b021104}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 175 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!iter\+\_\+8@{iter\+\_\+8}}
+\index{iter\+\_\+8@{iter\+\_\+8}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{iter\+\_\+8}{iter_8}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+8$>$ $>$\+::iterator {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::iter\+\_\+8}\hypertarget{classFusion__operator_a472aa52f1d6fb1646283d5d955a13ae1}{}\label{classFusion__operator_a472aa52f1d6fb1646283d5d955a13ae1}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 177 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!mandport@{mandport}}
+\index{mandport@{mandport}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{mandport}{mandport}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::bitset$<$9$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::mandport}\hypertarget{classFusion__operator_a1b0feb66d902358293e42a9cea02b5f7}{}\label{classFusion__operator_a1b0feb66d902358293e42a9cea02b5f7}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 54 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!O\+DP@{O\+DP}}
+\index{O\+DP@{O\+DP}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{O\+DP}{ODP}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ {\bf Output\+Data\+Port\+\_\+F}$<$Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::O\+DP}\hypertarget{classFusion__operator_a3afeb436d521b3c232ac41e26193ef3b}{}\label{classFusion__operator_a3afeb436d521b3c232ac41e26193ef3b}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 146 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Output\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!P\+B\+\_\+pub@{P\+B\+\_\+pub}}
+\index{P\+B\+\_\+pub@{P\+B\+\_\+pub}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{P\+B\+\_\+pub}{PB_pub}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::pub\+::\+Publisher {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::P\+B\+\_\+pub \{{\bf default\+\_\+dp}, default\+\_\+dp.\+default\+\_\+publisher\+\_\+qos()\}}\hypertarget{classFusion__operator_a121024c841142a5b50be10b19e94653e}{}\label{classFusion__operator_a121024c841142a5b50be10b19e94653e}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 59 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!P\+B\+\_\+sub@{P\+B\+\_\+sub}}
+\index{P\+B\+\_\+sub@{P\+B\+\_\+sub}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{P\+B\+\_\+sub}{PB_sub}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::sub\+::\+Subscriber {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::P\+B\+\_\+sub \{{\bf default\+\_\+dp}, default\+\_\+dp.\+default\+\_\+subscriber\+\_\+qos()\}}\hypertarget{classFusion__operator_aa22d9bbeb385dc5b1e31d85d65d63f28}{}\label{classFusion__operator_aa22d9bbeb385dc5b1e31d85d65d63f28}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 60 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!sample\+\_\+0@{sample\+\_\+0}}
+\index{sample\+\_\+0@{sample\+\_\+0}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{sample\+\_\+0}{sample_0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+0$>$ $>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::sample\+\_\+0 \{1\}}\hypertarget{classFusion__operator_ab24eda6a56115e1eb0ab2c89a2632436}{}\label{classFusion__operator_ab24eda6a56115e1eb0ab2c89a2632436}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 160 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!sample\+\_\+1@{sample\+\_\+1}}
+\index{sample\+\_\+1@{sample\+\_\+1}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{sample\+\_\+1}{sample_1}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+1$>$ $>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::sample\+\_\+1 \{1\}}\hypertarget{classFusion__operator_afe367eeae918067d7d26c90bc0be202d}{}\label{classFusion__operator_afe367eeae918067d7d26c90bc0be202d}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 162 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!sample\+\_\+2@{sample\+\_\+2}}
+\index{sample\+\_\+2@{sample\+\_\+2}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{sample\+\_\+2}{sample_2}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+2$>$ $>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::sample\+\_\+2 \{1\}}\hypertarget{classFusion__operator_a1a65f84d529180cd77defee525bc7bd6}{}\label{classFusion__operator_a1a65f84d529180cd77defee525bc7bd6}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 164 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!sample\+\_\+3@{sample\+\_\+3}}
+\index{sample\+\_\+3@{sample\+\_\+3}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{sample\+\_\+3}{sample_3}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+3$>$ $>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::sample\+\_\+3 \{1\}}\hypertarget{classFusion__operator_a1954d8d67f9a34d47e5b59cc65d09252}{}\label{classFusion__operator_a1954d8d67f9a34d47e5b59cc65d09252}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 166 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!sample\+\_\+4@{sample\+\_\+4}}
+\index{sample\+\_\+4@{sample\+\_\+4}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{sample\+\_\+4}{sample_4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+4$>$ $>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::sample\+\_\+4 \{1\}}\hypertarget{classFusion__operator_a56bb3464ca6d140acdf3560bb94a401b}{}\label{classFusion__operator_a56bb3464ca6d140acdf3560bb94a401b}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 168 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!sample\+\_\+5@{sample\+\_\+5}}
+\index{sample\+\_\+5@{sample\+\_\+5}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{sample\+\_\+5}{sample_5}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+5$>$ $>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::sample\+\_\+5 \{1\}}\hypertarget{classFusion__operator_a5623c0acc7a90d21a50ac010a5f1daf5}{}\label{classFusion__operator_a5623c0acc7a90d21a50ac010a5f1daf5}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 170 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!sample\+\_\+6@{sample\+\_\+6}}
+\index{sample\+\_\+6@{sample\+\_\+6}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{sample\+\_\+6}{sample_6}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+6$>$ $>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::sample\+\_\+6 \{1\}}\hypertarget{classFusion__operator_a0051d8d0ba3e16b797e38412e44f46ef}{}\label{classFusion__operator_a0051d8d0ba3e16b797e38412e44f46ef}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 172 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!sample\+\_\+7@{sample\+\_\+7}}
+\index{sample\+\_\+7@{sample\+\_\+7}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{sample\+\_\+7}{sample_7}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+7$>$ $>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::sample\+\_\+7 \{1\}}\hypertarget{classFusion__operator_ac206ae8fc1c89e2ca114bb80a5899bcd}{}\label{classFusion__operator_ac206ae8fc1c89e2ca114bb80a5899bcd}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 174 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!sample\+\_\+8@{sample\+\_\+8}}
+\index{sample\+\_\+8@{sample\+\_\+8}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{sample\+\_\+8}{sample_8}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::vector$<$dds\+::sub\+::\+Sample$<$Data\+\_\+8$>$ $>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::sample\+\_\+8 \{1\}}\hypertarget{classFusion__operator_ad74fbf7634ca557dc8e590487b21b283}{}\label{classFusion__operator_ad74fbf7634ca557dc8e590487b21b283}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 176 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!taken\+\_\+ports@{taken\+\_\+ports}}
+\index{taken\+\_\+ports@{taken\+\_\+ports}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{taken\+\_\+ports}{taken_ports}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ std\+::bitset$<$9$>$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::taken\+\_\+ports}\hypertarget{classFusion__operator_a29bdb5e13d8f8adf00ffcfcbca60fcf4}{}\label{classFusion__operator_a29bdb5e13d8f8adf00ffcfcbca60fcf4}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 56 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic0@{topic0}}
+\index{topic0@{topic0}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic0}{topic0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$Data\+\_\+0$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic0}\hypertarget{classFusion__operator_a378e811778586da6619a1d6c2d1c5f37}{}\label{classFusion__operator_a378e811778586da6619a1d6c2d1c5f37}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 62 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic1@{topic1}}
+\index{topic1@{topic1}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic1}{topic1}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$Data\+\_\+1$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic1}\hypertarget{classFusion__operator_a79543a848dd9ac2cb01f9e38acf2b988}{}\label{classFusion__operator_a79543a848dd9ac2cb01f9e38acf2b988}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 63 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic2@{topic2}}
+\index{topic2@{topic2}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic2}{topic2}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$Data\+\_\+2$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic2}\hypertarget{classFusion__operator_a156ba17873325c431689c47f2f2d6296}{}\label{classFusion__operator_a156ba17873325c431689c47f2f2d6296}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 64 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic3@{topic3}}
+\index{topic3@{topic3}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic3}{topic3}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$Data\+\_\+3$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic3}\hypertarget{classFusion__operator_af90486f24e7f5e82364b20ad9d448595}{}\label{classFusion__operator_af90486f24e7f5e82364b20ad9d448595}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 65 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic4@{topic4}}
+\index{topic4@{topic4}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic4}{topic4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$Data\+\_\+4$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic4}\hypertarget{classFusion__operator_a2436ee57380c11e74b971df67d23c06a}{}\label{classFusion__operator_a2436ee57380c11e74b971df67d23c06a}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 66 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic5@{topic5}}
+\index{topic5@{topic5}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic5}{topic5}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$Data\+\_\+5$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic5}\hypertarget{classFusion__operator_a610b159b6f22ca65f11d2db2c1b2124b}{}\label{classFusion__operator_a610b159b6f22ca65f11d2db2c1b2124b}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 67 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic6@{topic6}}
+\index{topic6@{topic6}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic6}{topic6}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$Data\+\_\+6$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic6}\hypertarget{classFusion__operator_a747b20c14e1a835bb763694a1368d857}{}\label{classFusion__operator_a747b20c14e1a835bb763694a1368d857}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 68 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic7@{topic7}}
+\index{topic7@{topic7}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic7}{topic7}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$Data\+\_\+7$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic7}\hypertarget{classFusion__operator_abeb8122aebb4d834cb3433aaa99365dd}{}\label{classFusion__operator_abeb8122aebb4d834cb3433aaa99365dd}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 69 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic8@{topic8}}
+\index{topic8@{topic8}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic8}{topic8}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$Data\+\_\+8$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic8}\hypertarget{classFusion__operator_ab050a3199eb223c53a60087961d0e0cc}{}\label{classFusion__operator_ab050a3199eb223c53a60087961d0e0cc}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 70 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic9@{topic9}}
+\index{topic9@{topic9}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic9}{topic9}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$Data\+\_\+9$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic9}\hypertarget{classFusion__operator_afb0a94863c813bbc7fc2a52838301937}{}\label{classFusion__operator_afb0a94863c813bbc7fc2a52838301937}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 71 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Output\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!topic\+\_\+event@{topic\+\_\+event}}
+\index{topic\+\_\+event@{topic\+\_\+event}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{topic\+\_\+event}{topic_event}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::topic\+::\+Topic$<$int$>$$\ast$ {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::topic\+\_\+event}\hypertarget{classFusion__operator_ab2ba1dc33bae5f39ecabd4018bedf47f}{}\label{classFusion__operator_ab2ba1dc33bae5f39ecabd4018bedf47f}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 72 번째 라인에서 정의되었습니다.
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!ws\+\_\+0@{ws\+\_\+0}}
+\index{ws\+\_\+0@{ws\+\_\+0}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{ws\+\_\+0}{ws_0}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::core\+::cond\+::\+Wait\+Set {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::ws\+\_\+0}\hypertarget{classFusion__operator_a15a7b6ccddbe0b8ad3bd8932a38c6db2}{}\label{classFusion__operator_a15a7b6ccddbe0b8ad3bd8932a38c6db2}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 75 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!ws\+\_\+1@{ws\+\_\+1}}
+\index{ws\+\_\+1@{ws\+\_\+1}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{ws\+\_\+1}{ws_1}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::core\+::cond\+::\+Wait\+Set {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::ws\+\_\+1}\hypertarget{classFusion__operator_a6ca4a3185f87b382542eaf241eab3e52}{}\label{classFusion__operator_a6ca4a3185f87b382542eaf241eab3e52}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 76 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!ws\+\_\+2@{ws\+\_\+2}}
+\index{ws\+\_\+2@{ws\+\_\+2}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{ws\+\_\+2}{ws_2}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::core\+::cond\+::\+Wait\+Set {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::ws\+\_\+2}\hypertarget{classFusion__operator_af231872d2c22b353710ee90b6a2be4bf}{}\label{classFusion__operator_af231872d2c22b353710ee90b6a2be4bf}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 77 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!ws\+\_\+3@{ws\+\_\+3}}
+\index{ws\+\_\+3@{ws\+\_\+3}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{ws\+\_\+3}{ws_3}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::core\+::cond\+::\+Wait\+Set {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::ws\+\_\+3}\hypertarget{classFusion__operator_a31133e7918c57cbca7cc42f141ff672d}{}\label{classFusion__operator_a31133e7918c57cbca7cc42f141ff672d}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 78 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!ws\+\_\+4@{ws\+\_\+4}}
+\index{ws\+\_\+4@{ws\+\_\+4}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{ws\+\_\+4}{ws_4}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::core\+::cond\+::\+Wait\+Set {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::ws\+\_\+4}\hypertarget{classFusion__operator_a5dea84d5320494140d650bc0823d56f2}{}\label{classFusion__operator_a5dea84d5320494140d650bc0823d56f2}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 79 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!ws\+\_\+5@{ws\+\_\+5}}
+\index{ws\+\_\+5@{ws\+\_\+5}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{ws\+\_\+5}{ws_5}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::core\+::cond\+::\+Wait\+Set {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::ws\+\_\+5}\hypertarget{classFusion__operator_ac2bc73cfd2d097373d0716e61c843a33}{}\label{classFusion__operator_ac2bc73cfd2d097373d0716e61c843a33}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 80 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!ws\+\_\+6@{ws\+\_\+6}}
+\index{ws\+\_\+6@{ws\+\_\+6}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{ws\+\_\+6}{ws_6}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::core\+::cond\+::\+Wait\+Set {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::ws\+\_\+6}\hypertarget{classFusion__operator_a32e2694d512a9ba74b13a0b07f8f4649}{}\label{classFusion__operator_a32e2694d512a9ba74b13a0b07f8f4649}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 81 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!ws\+\_\+7@{ws\+\_\+7}}
+\index{ws\+\_\+7@{ws\+\_\+7}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{ws\+\_\+7}{ws_7}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::core\+::cond\+::\+Wait\+Set {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::ws\+\_\+7}\hypertarget{classFusion__operator_a0c468d5a6c0fb3b6adf93372ca678c65}{}\label{classFusion__operator_a0c468d5a6c0fb3b6adf93372ca678c65}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 82 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+\index{Fusion\+\_\+operator@{Fusion\+\_\+operator}!ws\+\_\+8@{ws\+\_\+8}}
+\index{ws\+\_\+8@{ws\+\_\+8}!Fusion\+\_\+operator@{Fusion\+\_\+operator}}
+\subsubsection[{\texorpdfstring{ws\+\_\+8}{ws_8}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+\_\+0, typename Data\+\_\+1, typename Data\+\_\+2, typename Data\+\_\+3, typename Data\+\_\+4, typename Data\+\_\+5, typename Data\+\_\+6, typename Data\+\_\+7, typename Data\+\_\+8, typename Data\+\_\+9$>$ dds\+::core\+::cond\+::\+Wait\+Set {\bf Fusion\+\_\+operator}$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::ws\+\_\+8}\hypertarget{classFusion__operator_a07930a190539ebefac664cc34d81dbe8}{}\label{classFusion__operator_a07930a190539ebefac664cc34d81dbe8}
+
+
+Fusion\+\_\+operator.\+cpp 파일의 83 번째 라인에서 정의되었습니다.
+
+
+
+다음에 의해서 참조됨 \+:  Input\+Data\+Port\+\_\+\+F$<$ Data\+\_\+0, Data\+\_\+1, Data\+\_\+2, Data\+\_\+3, Data\+\_\+4, Data\+\_\+5, Data\+\_\+6, Data\+\_\+7, Data\+\_\+8, Data\+\_\+9 $>$\+::attach().
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일들로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{Fusion__operator_8cpp}{Fusion\+\_\+operator.\+cpp}\item 
+src/\hyperlink{sample__main__2_8cpp}{sample\+\_\+main\+\_\+2.\+cpp}\end{DoxyCompactItemize}

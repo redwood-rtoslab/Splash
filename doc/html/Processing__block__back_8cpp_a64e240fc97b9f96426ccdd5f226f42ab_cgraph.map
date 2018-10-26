@@ -1,0 +1,8 @@
+<map id="rate_check" name="rate_check">
+<area shape="rect" id="node2" href="$classOutputDataPort__PB.html#ac1c7e483c5d8d5c6b9891463b81e41a4" title="OutputDataPort_PB::\lattach" alt="" coords="158,5,305,47"/>
+<area shape="rect" id="node3" href="$sample__main_8cpp.html#ae2b580f894f38496da91bce6c31e186f" title="freshness_handler" alt="" coords="393,69,521,95"/>
+<area shape="rect" id="node4" href="$classInputDataPort__PB.html#a86f4f5662cd09fab17a1027815a2aaa3" title="InputDataPort_PB::initialize" alt="" coords="140,126,323,153"/>
+<area shape="rect" id="node5" href="$classInputRateMonitor__PB.html#ab37591b8f43422bacbaab7ce4b8ba7e7" title="InputRateMonitor_PB\l::setup" alt="" coords="384,120,531,161"/>
+<area shape="rect" id="node7" href="$classInputRateMonitor__PB.html#a078f5a23b3fff392b7f50a9d376ded0b" title="InputRateMonitor_PB::run" alt="" coords="371,186,544,213"/>
+<area shape="rect" id="node6" href="$sample__main_8cpp.html#a57c221f281c346c72b89c10137fea994" title="input_rate_handler" alt="" coords="592,127,720,154"/>
+</map>
